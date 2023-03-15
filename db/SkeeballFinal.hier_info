@@ -1,0 +1,77 @@
+|SkeeballFinal
+HEX0[0] <= skeeballScore:inst.score[0]
+HEX0[1] <= skeeballScore:inst.score[1]
+HEX0[2] <= skeeballScore:inst.score[2]
+HEX0[3] <= skeeballScore:inst.score[3]
+HEX0[4] <= skeeballScore:inst.score[4]
+HEX0[5] <= skeeballScore:inst.score[5]
+HEX0[6] <= skeeballScore:inst.score[6]
+KEY[0] => testStart:inst1.key
+KEY[1] => skeeballScore:inst.in0
+KEY[1] => skeeballScore:inst.in10
+KEY[1] => skeeballScore:inst.in20
+KEY[1] => skeeballScore:inst.in30
+KEY[1] => skeeballScore:inst.in40
+KEY[1] => skeeballScore:inst.in50
+KEY[1] => skeeballScore:inst.in100
+LEDR[0] <= skeeballScore:inst.balls[0]
+LEDR[1] <= skeeballScore:inst.balls[1]
+LEDR[2] <= skeeballScore:inst.balls[2]
+LEDR[3] <= skeeballScore:inst.balls[3]
+LEDR[4] <= skeeballScore:inst.balls[4]
+LEDR[5] <= skeeballScore:inst.balls[5]
+LEDR[6] <= skeeballScore:inst.balls[6]
+LEDR[7] <= skeeballScore:inst.balls[7]
+LEDR[8] <= skeeballScore:inst.balls[8]
+
+
+|SkeeballFinal|skeeballScore:inst
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => balls.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => score.OUTPUTSELECT
+start => Decoder0.IN0
+start => balls[8].DATAIN
+in0 => Decoder1.IN6
+in10 => Decoder1.IN5
+in20 => Decoder1.IN4
+in30 => Decoder1.IN3
+in40 => Decoder1.IN2
+in50 => Decoder1.IN1
+in100 => Decoder1.IN0
+balls[0] <= balls[0].DB_MAX_OUTPUT_PORT_TYPE
+balls[1] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[2] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[3] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[4] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[5] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[6] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[7] <= balls.DB_MAX_OUTPUT_PORT_TYPE
+balls[8] <= start.DB_MAX_OUTPUT_PORT_TYPE
+score[0] <= score[0].DB_MAX_OUTPUT_PORT_TYPE
+score[1] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[2] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[3] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[4] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[5] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[6] <= score.DB_MAX_OUTPUT_PORT_TYPE
+score[7] <= score.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|testStart:inst1
+key => start~reg0.CLK
+start <= start~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

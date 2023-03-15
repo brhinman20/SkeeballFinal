@@ -1,0 +1,14 @@
+// Bradyn Hinman
+// 3/15/2023
+// Skeeball State Machine
+
+module skeeballState(in0, in10, in20, in30, in40, in50, in100, state, balls, display);
+	input in0, in10, in20, in30, in40, in50, in100;
+	output [3:0] state;
+	output [8:0] balls;
+	output [41:0] display;
+	
+	reg [9:0] gamescore, highscore;
+	
+	
+endmodule
