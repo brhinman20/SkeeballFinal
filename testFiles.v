@@ -2,7 +2,7 @@
 // 3/15/2023
 // Testing Files
 
-module testStart(key, start);
+module testEdge(key, start);
 	input key;
 	output start;
 	

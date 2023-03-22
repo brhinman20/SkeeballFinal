@@ -1,0 +1,135 @@
+
+State Machine - |SkeeballFinal|highforfive:inst15|myCount5:countforfive|laststate
+Name laststate.s5 laststate.s4 laststate.s3 laststate.s2 laststate.s1 laststate.s0 
+laststate.s0 0 0 0 0 0 0 
+laststate.s1 0 0 0 0 1 1 
+laststate.s2 0 0 0 1 0 1 
+laststate.s3 0 0 1 0 0 1 
+laststate.s4 0 1 0 0 0 1 
+laststate.s5 1 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|highforfive:inst15|myCount5:countforfive|pstate
+Name pstate.s5 pstate.s4 pstate.s3 pstate.s2 pstate.s1 pstate.s0 
+pstate.s0 0 0 0 0 0 0 
+pstate.s1 0 0 0 0 1 1 
+pstate.s2 0 0 0 1 0 1 
+pstate.s3 0 0 1 0 0 1 
+pstate.s4 0 1 0 0 0 1 
+pstate.s5 1 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate
+Name pstate.J pstate.I pstate.H pstate.E pstate.F pstate.G pstate.C pstate.D pstate.B pstate.A 
+pstate.A 0 0 0 0 0 0 0 0 0 0 
+pstate.B 0 0 0 0 0 0 0 0 1 1 
+pstate.D 0 0 0 0 0 0 0 1 0 1 
+pstate.C 0 0 0 0 0 0 1 0 0 1 
+pstate.G 0 0 0 0 0 1 0 0 0 1 
+pstate.F 0 0 0 0 1 0 0 0 0 1 
+pstate.E 0 0 0 1 0 0 0 0 0 1 
+pstate.H 0 0 1 0 0 0 0 0 0 1 
+pstate.I 0 1 0 0 0 0 0 0 0 1 
+pstate.J 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate
+Name pstate.C pstate.D pstate.B pstate.A pstate.E 
+pstate.A 0 0 0 0 0 
+pstate.B 0 0 1 1 0 
+pstate.D 0 1 0 1 0 
+pstate.C 1 0 0 1 0 
+pstate.E 0 0 0 1 1 
+
+State Machine - |SkeeballFinal|highforfive:inst14|myCount5:countforfive|laststate
+Name laststate.s5 laststate.s4 laststate.s3 laststate.s2 laststate.s1 laststate.s0 
+laststate.s0 0 0 0 0 0 0 
+laststate.s1 0 0 0 0 1 1 
+laststate.s2 0 0 0 1 0 1 
+laststate.s3 0 0 1 0 0 1 
+laststate.s4 0 1 0 0 0 1 
+laststate.s5 1 0 0 0 0 1 
+
+State Machine - |SkeeballFinal|highforfive:inst14|myCount5:countforfive|pstate
+Name pstate.s5 pstate.s4 pstate.s3 pstate.s2 pstate.s1 pstate.s0 
+pstate.s0 0 0 0 0 0 0 
+pstate.s1 0 0 0 0 1 1 
+pstate.s2 0 0 0 1 0 1 
+pstate.s3 0 0 1 0 0 1 
+pstate.s4 0 1 0 0 0 1 
+pstate.s5 1 0 0 0 0 1 

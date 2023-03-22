@@ -1,77 +1,179 @@
 |SkeeballFinal
-HEX0[0] <= skeeballScore:inst.score[0]
-HEX0[1] <= skeeballScore:inst.score[1]
-HEX0[2] <= skeeballScore:inst.score[2]
-HEX0[3] <= skeeballScore:inst.score[3]
-HEX0[4] <= skeeballScore:inst.score[4]
-HEX0[5] <= skeeballScore:inst.score[5]
-HEX0[6] <= skeeballScore:inst.score[6]
-KEY[0] => testStart:inst1.key
-KEY[1] => skeeballScore:inst.in0
-KEY[1] => skeeballScore:inst.in10
-KEY[1] => skeeballScore:inst.in20
-KEY[1] => skeeballScore:inst.in30
-KEY[1] => skeeballScore:inst.in40
-KEY[1] => skeeballScore:inst.in50
-KEY[1] => skeeballScore:inst.in100
-LEDR[0] <= skeeballScore:inst.balls[0]
-LEDR[1] <= skeeballScore:inst.balls[1]
-LEDR[2] <= skeeballScore:inst.balls[2]
-LEDR[3] <= skeeballScore:inst.balls[3]
-LEDR[4] <= skeeballScore:inst.balls[4]
-LEDR[5] <= skeeballScore:inst.balls[5]
-LEDR[6] <= skeeballScore:inst.balls[6]
-LEDR[7] <= skeeballScore:inst.balls[7]
-LEDR[8] <= skeeballScore:inst.balls[8]
+HEX0[0] <= score_state.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => inst9.IN0
+KEY[1] => inst24.IN0
+CLOCK_50 => clk50MHzto1Hz:inst13.CLOCK_50
+SW[1] => inst23.IN0
+SW[2] => inst23.IN2
+SW[3] => inst23.IN1
+SW[4] => inst23.IN3
+SW[5] => inst23.IN4
+SW[6] => inst23.IN5
+HEX1[0] <= finish_state.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] <= play_state.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[0] <= menu_state.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[0] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= clk50MHzto1Hz:inst13.clk1Hz
+LEDR[0] <= balls[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= balls[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= balls[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= balls[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= balls[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= balls[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= balls[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= balls[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= balls[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SkeeballFinal|skeeballScore:inst
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => balls.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => score.OUTPUTSELECT
-start => Decoder0.IN0
-start => balls[8].DATAIN
-in0 => Decoder1.IN6
-in10 => Decoder1.IN5
-in20 => Decoder1.IN4
-in30 => Decoder1.IN3
-in40 => Decoder1.IN2
-in50 => Decoder1.IN1
-in100 => Decoder1.IN0
-balls[0] <= balls[0].DB_MAX_OUTPUT_PORT_TYPE
-balls[1] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[2] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[3] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[4] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[5] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[6] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[7] <= balls.DB_MAX_OUTPUT_PORT_TYPE
-balls[8] <= start.DB_MAX_OUTPUT_PORT_TYPE
-score[0] <= score[0].DB_MAX_OUTPUT_PORT_TYPE
-score[1] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[2] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[3] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[4] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[5] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[6] <= score.DB_MAX_OUTPUT_PORT_TYPE
-score[7] <= score.DB_MAX_OUTPUT_PORT_TYPE
+|SkeeballFinal|skeeballStateDecode:inst11
+state[0] => playingState.IN0
+state[0] => scoreState.IN0
+state[0] => menuState.IN0
+state[0] => finishState.IN0
+state[1] => finishState.IN1
+state[1] => scoreState.IN1
+state[1] => menuState.IN1
+state[1] => playingState.IN1
+menuState <= menuState.DB_MAX_OUTPUT_PORT_TYPE
+playingState <= playingState.DB_MAX_OUTPUT_PORT_TYPE
+finishState <= finishState.DB_MAX_OUTPUT_PORT_TYPE
+scoreState <= scoreState.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SkeeballFinal|testStart:inst1
-key => start~reg0.CLK
-start <= start~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|SkeeballFinal|skeeballState:inst12
+trigger => state[0]~reg0.CLK
+trigger => state[1]~reg0.CLK
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|highforfive:inst14
+clk => comb.IN1
+reset => reset.IN1
+sense => isHigh.PRESET
+state[0] <= myCount5:countforfive.port2
+state[1] <= myCount5:countforfive.port2
+state[2] <= myCount5:countforfive.port2
+state[3] <= myCount5:countforfive.port2
+y <= myCount5:countforfive.port3
+
+
+|SkeeballFinal|highforfive:inst14|myCount5:countforfive
+clk => laststate~1.DATAIN
+clk => pstate~1.DATAIN
+Reset => laststate~3.DATAIN
+Reset => pstate~3.DATAIN
+state[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= <GND>
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13
+CLOCK_50 => CLOCK_50.IN1
+Reset => Reset.IN8
+clk1Hz <= my_MOD10:div10_7.port2
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD5:div5_1
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_3
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_4
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_5
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|highforfive:inst15
+clk => comb.IN1
+reset => reset.IN1
+sense => isHigh.PRESET
+state[0] <= myCount5:countforfive.port2
+state[1] <= myCount5:countforfive.port2
+state[2] <= myCount5:countforfive.port2
+state[3] <= myCount5:countforfive.port2
+y <= myCount5:countforfive.port3
+
+
+|SkeeballFinal|highforfive:inst15|myCount5:countforfive
+clk => laststate~1.DATAIN
+clk => pstate~1.DATAIN
+Reset => laststate~3.DATAIN
+Reset => pstate~3.DATAIN
+state[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= <GND>
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballBalls:inst10
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+game => balls.OUTPUTSELECT
+clk => balls[0]~reg0.CLK
+clk => balls[1]~reg0.CLK
+clk => balls[2]~reg0.CLK
+clk => balls[3]~reg0.CLK
+clk => balls[4]~reg0.CLK
+clk => balls[5]~reg0.CLK
+clk => balls[6]~reg0.CLK
+clk => balls[7]~reg0.CLK
+clk => balls[8]~reg0.CLK
+balls[0] <= balls[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[1] <= balls[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[2] <= balls[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[3] <= balls[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[4] <= balls[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[5] <= balls[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[6] <= balls[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[7] <= balls[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+balls[8] <= balls[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

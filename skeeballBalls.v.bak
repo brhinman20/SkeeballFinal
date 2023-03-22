@@ -1,0 +1,41 @@
+// Bradyn Hinman
+// 3/22/2023
+// Skeeball Balls
+
+module skeeballBalls(game, clk, balls);
+	input game, clk;
+	output [8:0] balls;
+	
+	reg [8:0] balls;
+
+	parameter balls9 = 9'b111111111;
+	parameter balls8 = 9'b011111111;
+	parameter balls7 = 9'b001111111;
+	parameter balls6 = 9'b000111111;
+	parameter balls5 = 9'b000011111;
+	parameter balls4 = 9'b000001111;
+	parameter balls3 = 9'b000000111;
+	parameter balls2 = 9'b000000011;
+	parameter balls1 = 9'b000000001;
+	parameter balls0 = 9'b000000000;
+
+	always @ (clk)
+		begin
+			if (game==1'b0) balls = balls0;
+			else begin
+				case(balls)
+					balls9: balls = balls8;
+					balls8: balls = balls7;
+					balls7: balls = balls6;
+					balls6: balls = balls5;
+					balls5: balls = balls4;
+					balls4: balls = balls3;
+					balls3: balls = balls2;
+					balls2: balls = balls1;
+					balls1: balls = balls0;
+					default: balls = balls4;
+				endcase
+			end
+		end
+
+endmodule
