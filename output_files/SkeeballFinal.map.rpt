@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SkeeballFinal
-Wed Mar 22 16:32:35 2023
+Mon Mar 27 17:29:30 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
 
 
@@ -26,22 +26,34 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
  18. State Machine - |SkeeballFinal|highforfive:inst14|myCount5:countforfive|laststate
  19. State Machine - |SkeeballFinal|highforfive:inst14|myCount5:countforfive|pstate
  20. Registers Removed During Synthesis
- 21. General Register Statistics
- 22. Inverted Register Statistics
- 23. Parameter Settings for User Entity Instance: highforfive:inst14|myCount5:countforfive
- 24. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD5:div5_1
- 25. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_1
- 26. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_2
- 27. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_3
- 28. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_4
- 29. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_5
- 30. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_6
- 31. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_7
- 32. Parameter Settings for User Entity Instance: highforfive:inst15|myCount5:countforfive
- 33. Parameter Settings for User Entity Instance: skeeballBalls:inst10
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
+ 21. Removed Registers Triggering Further Register Optimizations
+ 22. General Register Statistics
+ 23. Inverted Register Statistics
+ 24. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 25. Parameter Settings for User Entity Instance: skeeballDisplay:instDisp
+ 26. Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:highDisplays
+ 27. Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:scoreDisplays
+ 28. Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:lastDisplays
+ 29. Parameter Settings for User Entity Instance: highforfive:inst14|myCount5:countforfive
+ 30. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD5:div5_1
+ 31. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_1
+ 32. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_2
+ 33. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_3
+ 34. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_4
+ 35. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_5
+ 36. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_6
+ 37. Parameter Settings for User Entity Instance: clk50MHzto1Hz:inst13|my_MOD10:div10_7
+ 38. Parameter Settings for User Entity Instance: highforfive:inst15|myCount5:countforfive
+ 39. Parameter Settings for User Entity Instance: skeeballBalls:inst10
+ 40. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex0"
+ 41. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex1"
+ 42. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex2"
+ 43. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex3"
+ 44. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex4"
+ 45. Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex5"
+ 46. Post-Synthesis Netlist Statistics for Top Partition
+ 47. Elapsed Time Per Partition
+ 48. Analysis & Synthesis Messages
 
 
 
@@ -68,14 +80,14 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 22 16:32:35 2023           ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 27 17:29:30 2023           ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Standard Edition ;
 ; Revision Name                   ; SkeeballFinal                                   ;
 ; Top-level Entity Name           ; SkeeballFinal                                   ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 102                                             ;
-; Total pins                      ; 24                                              ;
+; Total registers                 ; 127                                             ;
+; Total pins                      ; 60                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -198,6 +210,8 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 ; skeeballState.v                  ; yes             ; User Verilog HDL File              ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballState.v   ;         ;
+; skeeballDisplay.v                ; yes             ; User Verilog HDL File              ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v ;         ;
+; skeeballScore.v                  ; yes             ; User Verilog HDL File              ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballScore.v   ;         ;
 ; SkeeballFinal.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/SkeeballFinal.bdf ;         ;
 ; skeeballBalls.v                  ; yes             ; User Verilog HDL File              ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballBalls.v   ;         ;
 ; skeeballTimers.v                 ; yes             ; User Verilog HDL File              ; C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v  ;         ;
@@ -209,51 +223,59 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------------------+
 ; Resource                                    ; Usage                         ;
 +---------------------------------------------+-------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 59                            ;
+; Estimate of Logic utilization (ALMs needed) ; 110                           ;
 ;                                             ;                               ;
-; Combinational ALUT usage for logic          ; 59                            ;
-;     -- 7 input functions                    ; 0                             ;
-;     -- 6 input functions                    ; 12                            ;
-;     -- 5 input functions                    ; 5                             ;
-;     -- 4 input functions                    ; 6                             ;
-;     -- <=3 input functions                  ; 36                            ;
+; Combinational ALUT usage for logic          ; 171                           ;
+;     -- 7 input functions                    ; 1                             ;
+;     -- 6 input functions                    ; 28                            ;
+;     -- 5 input functions                    ; 35                            ;
+;     -- 4 input functions                    ; 62                            ;
+;     -- <=3 input functions                  ; 45                            ;
 ;                                             ;                               ;
-; Dedicated logic registers                   ; 102                           ;
+; Dedicated logic registers                   ; 127                           ;
 ;                                             ;                               ;
-; I/O pins                                    ; 24                            ;
+; I/O pins                                    ; 60                            ;
 ;                                             ;                               ;
 ; Total DSP Blocks                            ; 0                             ;
 ;                                             ;                               ;
-; Maximum fan-out node                        ; skeeballState:inst12|state[0] ;
-; Maximum fan-out                             ; 16                            ;
-; Total fan-out                               ; 431                           ;
-; Average fan-out                             ; 2.06                          ;
+; Maximum fan-out node                        ; skeeballState:inst12|state[1] ;
+; Maximum fan-out                             ; 44                            ;
+; Total fan-out                               ; 1072                          ;
+; Average fan-out                             ; 2.56                          ;
 +---------------------------------------------+-------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name         ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+---------------------+--------------+
-; |SkeeballFinal                  ; 59 (3)              ; 102 (0)                   ; 0                 ; 0          ; 24   ; 0            ; |SkeeballFinal                                          ; SkeeballFinal       ; work         ;
-;    |clk50MHzto1Hz:inst13|       ; 16 (0)              ; 75 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13                     ; clk50MHzto1Hz       ; work         ;
-;       |my_MOD10:div10_1|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_2|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_3|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_3    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_4|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_4    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_5|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_5    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_6|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6    ; my_MOD10            ; work         ;
-;       |my_MOD10:div10_7|        ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7    ; my_MOD10            ; work         ;
-;       |my_MOD5:div5_1|          ; 2 (2)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD5:div5_1      ; my_MOD5             ; work         ;
-;    |highforfive:inst14|         ; 4 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14                       ; highforfive         ; work         ;
-;       |myCount5:countforfive|   ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14|myCount5:countforfive ; myCount5            ; work         ;
-;    |highforfive:inst15|         ; 4 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15                       ; highforfive         ; work         ;
-;       |myCount5:countforfive|   ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15|myCount5:countforfive ; myCount5            ; work         ;
-;    |skeeballBalls:inst10|       ; 26 (26)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                     ; skeeballBalls       ; work         ;
-;    |skeeballState:inst12|       ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballState:inst12                     ; skeeballState       ; work         ;
-;    |skeeballStateDecode:inst11| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballStateDecode:inst11               ; skeeballStateDecode ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name     ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
+; |SkeeballFinal                   ; 171 (3)             ; 127 (0)                   ; 0                 ; 0          ; 60   ; 0            ; |SkeeballFinal                                                   ; SkeeballFinal   ; work         ;
+;    |clk50MHzto1Hz:inst13|        ; 16 (0)              ; 75 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13                              ; clk50MHzto1Hz   ; work         ;
+;       |my_MOD10:div10_1|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_2|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_3|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_3             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_4|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_4             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_5|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_5             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_6|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_7|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7             ; my_MOD10        ; work         ;
+;       |my_MOD5:div5_1|           ; 2 (2)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD5:div5_1               ; my_MOD5         ; work         ;
+;    |highforfive:inst14|          ; 4 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14                                ; highforfive     ; work         ;
+;       |myCount5:countforfive|    ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14|myCount5:countforfive          ; myCount5        ; work         ;
+;    |highforfive:inst15|          ; 4 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15                                ; highforfive     ; work         ;
+;       |myCount5:countforfive|    ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15|myCount5:countforfive          ; myCount5        ; work         ;
+;    |skeeballBalls:inst10|        ; 20 (20)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                              ; skeeballBalls   ; work         ;
+;    |skeeballDisplay:instDisp|    ; 66 (5)              ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp                          ; skeeballDisplay ; work         ;
+;       |hexDisplay:highDisplays|  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:highDisplays  ; hexDisplay      ; work         ;
+;       |hexDisplay:lastDisplays|  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:lastDisplays  ; hexDisplay      ; work         ;
+;       |hexDisplay:scoreDisplays| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:scoreDisplays ; hexDisplay      ; work         ;
+;       |skeeballHex:dispHex0|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex0     ; skeeballHex     ; work         ;
+;       |skeeballHex:dispHex1|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex1     ; skeeballHex     ; work         ;
+;       |skeeballHex:dispHex2|     ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex2     ; skeeballHex     ; work         ;
+;       |skeeballHex:dispHex3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex3     ; skeeballHex     ; work         ;
+;    |skeeballScore:instScore|     ; 57 (57)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballScore:instScore                           ; skeeballScore   ; work         ;
+;    |skeeballState:inst12|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballState:inst12                              ; skeeballState   ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -464,70 +486,82 @@ Encoding Type:  One-Hot
 +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 
-+----------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                         ;
-+-------------------------------------------------------+--------------------+
-; Register name                                         ; Reason for Removal ;
-+-------------------------------------------------------+--------------------+
-; highforfive:inst15|myCount5:countforfive|laststate.s0 ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate.s1 ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate.s2 ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate.s3 ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate.s4 ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate.s0 ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate.s1 ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate.s2 ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate.s3 ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate.s4 ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate~4  ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate~5  ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate~6  ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|laststate~7  ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|pstate~4     ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|pstate~5     ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|pstate~6     ; Lost fanout        ;
-; highforfive:inst15|myCount5:countforfive|pstate~7     ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~4        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~5        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~6        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~7        ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~4          ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~5          ; Lost fanout        ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~7          ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate~4  ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate~5  ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate~6  ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|laststate~7  ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|pstate~4     ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|pstate~5     ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|pstate~6     ; Lost fanout        ;
-; highforfive:inst14|myCount5:countforfive|pstate~7     ; Lost fanout        ;
-; Total Number of Removed Registers = 57                ;                    ;
-+-------------------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                     ;
++-------------------------------------------------------+------------------------------------------------+
+; Register name                                         ; Reason for Removal                             ;
++-------------------------------------------------------+------------------------------------------------+
+; skeeballScore:instScore|score1s[6]                    ; Merged with skeeballScore:instScore|score1s[5] ;
+; skeeballScore:instScore|score1s[5]                    ; Stuck at GND due to stuck port data_in         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s0 ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate.s1 ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate.s2 ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate.s3 ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate.s4 ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate.s0 ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate.s1 ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate.s2 ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate.s3 ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate.s4 ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate~4  ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate~5  ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate~6  ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|laststate~7  ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|pstate~4     ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|pstate~5     ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|pstate~6     ; Lost fanout                                    ;
+; highforfive:inst15|myCount5:countforfive|pstate~7     ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~4        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~5        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~6        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate~7        ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~4          ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~5          ; Lost fanout                                    ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate~7          ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate~4  ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate~5  ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate~6  ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|laststate~7  ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|pstate~4     ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|pstate~5     ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|pstate~6     ; Lost fanout                                    ;
+; highforfive:inst14|myCount5:countforfive|pstate~7     ; Lost fanout                                    ;
+; skeeballScore:instScore|score10s[4..6]                ; Lost fanout                                    ;
+; Total Number of Removed Registers = 62                ;                                                ;
++-------------------------------------------------------+------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                         ;
++-------------------------------------+--------------------+--------------------------------------------------------------------------+
+; Register name                       ; Reason for Removal ; Registers Removed due to This Register                                   ;
++-------------------------------------+--------------------+--------------------------------------------------------------------------+
+; skeeballScore:instScore|score10s[6] ; Lost Fanouts       ; skeeballScore:instScore|score10s[5], skeeballScore:instScore|score10s[4] ;
++-------------------------------------+--------------------+--------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -535,12 +569,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 102   ;
+; Total registers                              ; 127   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 14    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -554,6 +588,94 @@ Encoding Type:  One-Hot
 ; highforfive:inst14|isHigh              ; 1       ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 44:1               ; 7 bits    ; 203 LEs       ; 7 LEs                ; 196 LEs                ; Yes        ; |SkeeballFinal|skeeballScore:instScore|score10s[4]                ;
+; 44:1               ; 2 bits    ; 58 LEs        ; 14 LEs               ; 44 LEs                 ; Yes        ; |SkeeballFinal|skeeballScore:instScore|score1s[4]                 ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex2|Mux5 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: skeeballDisplay:instDisp ;
++----------------+---------+--------------------------------------------+
+; Parameter Name ; Value   ; Type                                       ;
++----------------+---------+--------------------------------------------+
+; dispf          ; 0001110 ; Unsigned Binary                            ;
+; dispi          ; 1001111 ; Unsigned Binary                            ;
+; dispn          ; 0101011 ; Unsigned Binary                            ;
+; disps          ; 0010010 ; Unsigned Binary                            ;
+; disph          ; 0001001 ; Unsigned Binary                            ;
+; disp_          ; 1111111 ; Unsigned Binary                            ;
+; dispc          ; 0100111 ; Unsigned Binary                            ;
+; disp0          ; 1000000 ; Unsigned Binary                            ;
++----------------+---------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:highDisplays ;
++----------------+---------+--------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                               ;
++----------------+---------+--------------------------------------------------------------------+
+; disp0          ; 1000000 ; Unsigned Binary                                                    ;
+; disp1          ; 1111001 ; Unsigned Binary                                                    ;
+; disp2          ; 0100100 ; Unsigned Binary                                                    ;
+; disp3          ; 0110000 ; Unsigned Binary                                                    ;
+; disp4          ; 0011001 ; Unsigned Binary                                                    ;
+; disp5          ; 0010010 ; Unsigned Binary                                                    ;
+; disp6          ; 0000010 ; Unsigned Binary                                                    ;
+; disp7          ; 1111000 ; Unsigned Binary                                                    ;
+; disp8          ; 0000000 ; Unsigned Binary                                                    ;
+; disp9          ; 0010000 ; Unsigned Binary                                                    ;
+; dispError      ; 0000110 ; Unsigned Binary                                                    ;
++----------------+---------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:scoreDisplays ;
++----------------+---------+---------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                ;
++----------------+---------+---------------------------------------------------------------------+
+; disp0          ; 1000000 ; Unsigned Binary                                                     ;
+; disp1          ; 1111001 ; Unsigned Binary                                                     ;
+; disp2          ; 0100100 ; Unsigned Binary                                                     ;
+; disp3          ; 0110000 ; Unsigned Binary                                                     ;
+; disp4          ; 0011001 ; Unsigned Binary                                                     ;
+; disp5          ; 0010010 ; Unsigned Binary                                                     ;
+; disp6          ; 0000010 ; Unsigned Binary                                                     ;
+; disp7          ; 1111000 ; Unsigned Binary                                                     ;
+; disp8          ; 0000000 ; Unsigned Binary                                                     ;
+; disp9          ; 0010000 ; Unsigned Binary                                                     ;
+; dispError      ; 0000110 ; Unsigned Binary                                                     ;
++----------------+---------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: skeeballDisplay:instDisp|hexDisplay:lastDisplays ;
++----------------+---------+--------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                               ;
++----------------+---------+--------------------------------------------------------------------+
+; disp0          ; 1000000 ; Unsigned Binary                                                    ;
+; disp1          ; 1111001 ; Unsigned Binary                                                    ;
+; disp2          ; 0100100 ; Unsigned Binary                                                    ;
+; disp3          ; 0110000 ; Unsigned Binary                                                    ;
+; disp4          ; 0011001 ; Unsigned Binary                                                    ;
+; disp5          ; 0010010 ; Unsigned Binary                                                    ;
+; disp6          ; 0000010 ; Unsigned Binary                                                    ;
+; disp7          ; 1111000 ; Unsigned Binary                                                    ;
+; disp8          ; 0000000 ; Unsigned Binary                                                    ;
+; disp9          ; 0010000 ; Unsigned Binary                                                    ;
+; dispError      ; 0000110 ; Unsigned Binary                                                    ;
++----------------+---------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------+
@@ -752,26 +874,140 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex0" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; highDisp[5..0]   ; Input ; Info     ; Stuck at GND                        ;
+; highDisp[6]      ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[5..0]  ; Input ; Info     ; Stuck at GND                        ;
+; scoreDisp[6]     ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[6..4] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[2..1] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[3]    ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[0]    ; Input ; Info     ; Stuck at VCC                        ;
+; lastDisp[5..0]   ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[6]      ; Input ; Info     ; Stuck at VCC                        ;
++------------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex1" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; finishDisp[6..5] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[3..2] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[4]    ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[1]    ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[0]    ; Input ; Info     ; Stuck at GND                        ;
++------------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex2" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; finishDisp[3..0] ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[5..4] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[6]    ; Input ; Info     ; Stuck at VCC                        ;
++------------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex3" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; highDisp         ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp        ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[1..0] ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[6]    ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[5]    ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[4]    ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[3]    ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[2]    ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp         ; Input ; Info     ; Stuck at VCC                        ;
++------------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex4" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; highDisp[3..0]   ; Input ; Info     ; Stuck at VCC                        ;
+; highDisp[5..4]   ; Input ; Info     ; Stuck at GND                        ;
+; highDisp[6]      ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[2..0]  ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[4..3]  ; Input ; Info     ; Stuck at GND                        ;
+; scoreDisp[6]     ; Input ; Info     ; Stuck at GND                        ;
+; scoreDisp[5]     ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[3..0] ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[5..4] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[6]    ; Input ; Info     ; Stuck at VCC                        ;
+; lastDisp[2..0]   ; Input ; Info     ; Stuck at VCC                        ;
+; lastDisp[4..3]   ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[6]      ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[5]      ; Input ; Info     ; Stuck at VCC                        ;
++------------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "skeeballDisplay:instDisp|skeeballHex:dispHex5" ;
++------------------+-------+----------+-------------------------------------+
+; Port             ; Type  ; Severity ; Details                             ;
++------------------+-------+----------+-------------------------------------+
+; highDisp[6..4]   ; Input ; Info     ; Stuck at GND                        ;
+; highDisp[2..1]   ; Input ; Info     ; Stuck at GND                        ;
+; highDisp[3]      ; Input ; Info     ; Stuck at VCC                        ;
+; highDisp[0]      ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[6..5]  ; Input ; Info     ; Stuck at GND                        ;
+; scoreDisp[3..2]  ; Input ; Info     ; Stuck at GND                        ;
+; scoreDisp[4]     ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[1]     ; Input ; Info     ; Stuck at VCC                        ;
+; scoreDisp[0]     ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[3..1] ; Input ; Info     ; Stuck at VCC                        ;
+; finishDisp[6..4] ; Input ; Info     ; Stuck at GND                        ;
+; finishDisp[0]    ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[6..5]   ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[3..2]   ; Input ; Info     ; Stuck at GND                        ;
+; lastDisp[4]      ; Input ; Info     ; Stuck at VCC                        ;
+; lastDisp[1]      ; Input ; Info     ; Stuck at VCC                        ;
+; lastDisp[0]      ; Input ; Info     ; Stuck at GND                        ;
++------------------+-------+----------+-------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 102                         ;
+; arriav_ff             ; 127                         ;
 ;     CLR               ; 16                          ;
-;     plain             ; 86                          ;
-; arriav_lcell_comb     ; 59                          ;
-;     normal            ; 59                          ;
-;         1 data inputs ; 21                          ;
+;     ENA               ; 10                          ;
+;     ENA SLD           ; 4                           ;
+;     SLD               ; 12                          ;
+;     plain             ; 85                          ;
+; arriav_lcell_comb     ; 175                         ;
+;     arith             ; 4                           ;
+;         1 data inputs ; 4                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 170                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 24                          ;
 ;         2 data inputs ; 13                          ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 6                           ;
-;         5 data inputs ; 5                           ;
-;         6 data inputs ; 12                          ;
-; boundary_port         ; 24                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 62                          ;
+;         5 data inputs ; 35                          ;
+;         6 data inputs ; 28                          ;
+; boundary_port         ; 60                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.91                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -790,15 +1026,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
-    Info: Processing started: Wed Mar 22 16:32:24 2023
+    Info: Processing started: Mon Mar 27 17:29:19 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SkeeballFinal -c SkeeballFinal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file skeeballstate.v
     Info (12023): Found entity 1: skeeballState File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballState.v Line: 5
     Info (12023): Found entity 2: skeeballStateDecode File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballState.v Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file skeeballdisplay.v
+Info (12021): Found 3 design units, including 3 entities, in source file skeeballdisplay.v
     Info (12023): Found entity 1: skeeballDisplay File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 5
+    Info (12023): Found entity 2: skeeballHex File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 44
+    Info (12023): Found entity 3: hexDisplay File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 64
 Info (12021): Found 1 design units, including 1 entities, in source file skeeballscore.v
     Info (12023): Found entity 1: skeeballScore File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballScore.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file skeeballfinal.bdf
@@ -807,36 +1045,52 @@ Info (12021): Found 1 design units, including 1 entities, in source file testfil
     Info (12023): Found entity 1: testEdge File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/testFiles.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file skeeballballs.v
     Info (12023): Found entity 1: skeeballBalls File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballBalls.v Line: 5
-Info (12021): Found 6 design units, including 6 entities, in source file skeeballtimers.v
+Info (12021): Found 5 design units, including 5 entities, in source file skeeballtimers.v
     Info (12023): Found entity 1: highforfive File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 5
-    Info (12023): Found entity 2: myCount5 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 31
-    Info (12023): Found entity 3: clk50MHzto1Hz File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 77
-    Info (12023): Found entity 4: clk50MHzto10Hz File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 95
-    Info (12023): Found entity 5: my_MOD10 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 112
-    Info (12023): Found entity 6: my_MOD5 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 157
-Warning (10236): Verilog HDL Implicit Net warning at skeeballTimers.v(14): created implicit net for "Reset" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 14
+    Info (12023): Found entity 2: myCount5 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 29
+    Info (12023): Found entity 3: clk50MHzto1Hz File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 75
+    Info (12023): Found entity 4: my_MOD10 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 92
+    Info (12023): Found entity 5: my_MOD5 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 137
 Info (12127): Elaborating entity "SkeeballFinal" for the top level hierarchy
+Info (12128): Elaborating entity "skeeballDisplay" for hierarchy "skeeballDisplay:instDisp"
+Info (12128): Elaborating entity "hexDisplay" for hierarchy "skeeballDisplay:instDisp|hexDisplay:highDisplays" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 30
+Info (12128): Elaborating entity "skeeballHex" for hierarchy "skeeballDisplay:instDisp|skeeballHex:dispHex5" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 34
+Info (12128): Elaborating entity "skeeballScore" for hierarchy "skeeballScore:instScore"
 Info (12128): Elaborating entity "skeeballStateDecode" for hierarchy "skeeballStateDecode:inst11"
 Info (12128): Elaborating entity "skeeballState" for hierarchy "skeeballState:inst12"
 Info (12128): Elaborating entity "highforfive" for hierarchy "highforfive:inst14"
-Warning (10036): Verilog HDL or VHDL warning at skeeballTimers.v(14): object "Reset" assigned a value but never read File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 14
-Info (12128): Elaborating entity "myCount5" for hierarchy "highforfive:inst14|myCount5:countforfive" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 24
+Info (12128): Elaborating entity "myCount5" for hierarchy "highforfive:inst14|myCount5:countforfive" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 22
 Info (12128): Elaborating entity "clk50MHzto1Hz" for hierarchy "clk50MHzto1Hz:inst13"
-Info (12128): Elaborating entity "my_MOD5" for hierarchy "clk50MHzto1Hz:inst13|my_MOD5:div5_1" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 83
-Info (12128): Elaborating entity "my_MOD10" for hierarchy "clk50MHzto1Hz:inst13|my_MOD10:div10_1" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 84
+Info (12128): Elaborating entity "my_MOD5" for hierarchy "clk50MHzto1Hz:inst13|my_MOD5:div5_1" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 81
+Info (12128): Elaborating entity "my_MOD10" for hierarchy "clk50MHzto1Hz:inst13|my_MOD10:div10_1" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 82
 Info (12128): Elaborating entity "skeeballBalls" for hierarchy "skeeballBalls:inst10"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[5]" is stuck at GND
+    Warning (13410): Pin "HEX0[4]" is stuck at GND
+    Warning (13410): Pin "HEX0[2]" is stuck at GND
+    Warning (13410): Pin "HEX0[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC
+    Warning (13410): Pin "HEX4[4]" is stuck at GND
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC
+    Warning (13410): Pin "HEX5[6]" is stuck at GND
+    Warning (13410): Pin "HEX5[5]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 57 registers lost all their fanouts during netlist optimizations.
+Info (17049): 60 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 318 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 130 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Wed Mar 22 16:32:35 2023
+    Info (21059): Implemented 51 output pins
+    Info (21061): Implemented 258 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Mon Mar 27 17:29:30 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:19
 
 
