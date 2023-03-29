@@ -1,5 +1,5 @@
 Fitter report for SkeeballFinal
-Mon Mar 27 17:29:58 2023
+Wed Mar 29 16:24:43 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
 
 
@@ -64,16 +64,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Mar 27 17:29:58 2023           ;
+; Fitter Status                   ; Successful - Wed Mar 29 16:24:43 2023           ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Standard Edition ;
 ; Revision Name                   ; SkeeballFinal                                   ;
 ; Top-level Entity Name           ; SkeeballFinal                                   ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 105 / 32,070 ( < 1 % )                          ;
-; Total registers                 ; 132                                             ;
-; Total pins                      ; 60 / 457 ( 13 % )                               ;
+; Logic utilization (in ALMs)     ; 81 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 126                                             ;
+; Total pins                      ; 56 / 457 ( 12 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
 ; Total RAM Blocks                ; 0 / 397 ( 0 % )                                 ;
@@ -154,29 +154,24 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processor 3            ;   0.6%      ;
-;     Processor 4            ;   0.5%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processor 3            ;   1.1%      ;
+;     Processor 4            ;   1.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                  ;
-+-------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-----------------------------------------+------------------+-----------------------+
-; Node                          ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                        ; Destination Port ; Destination Port Name ;
-+-------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-----------------------------------------+------------------+-----------------------+
-; CLOCK_50~inputCLKENA0         ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                         ;                  ;                       ;
-; skeeballBalls:inst10|balls[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; skeeballBalls:inst10|balls[1]~DUPLICATE ;                  ;                       ;
-; skeeballBalls:inst10|balls[3] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; skeeballBalls:inst10|balls[3]~DUPLICATE ;                  ;                       ;
-; skeeballBalls:inst10|balls[4] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; skeeballBalls:inst10|balls[4]~DUPLICATE ;                  ;                       ;
-; skeeballBalls:inst10|balls[6] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; skeeballBalls:inst10|balls[6]~DUPLICATE ;                  ;                       ;
-; skeeballBalls:inst10|balls[7] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; skeeballBalls:inst10|balls[7]~DUPLICATE ;                  ;                       ;
-+-------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-----------------------------------------+------------------+-----------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                        ;
++-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; Node                  ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
++-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; CLOCK_50~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
++-----------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -188,6 +183,10 @@ https://fpgasoftware.intel.com/eula.
 ; Location ;                ;              ; CLOCK3_50  ; PIN_Y26       ; QSF Assignment ;
 ; Location ;                ;              ; CLOCK4_50  ; PIN_K14       ; QSF Assignment ;
 ; Location ;                ;              ; LEDR[9]    ; PIN_Y21       ; QSF Assignment ;
+; Location ;                ;              ; SW[0]      ; PIN_AB12      ; QSF Assignment ;
+; Location ;                ;              ; SW[1]      ; PIN_AC12      ; QSF Assignment ;
+; Location ;                ;              ; SW[2]      ; PIN_AF9       ; QSF Assignment ;
+; Location ;                ;              ; SW[3]      ; PIN_AF10      ; QSF Assignment ;
 ; Location ;                ;              ; SW[4]      ; PIN_AD11      ; QSF Assignment ;
 ; Location ;                ;              ; SW[5]      ; PIN_AD12      ; QSF Assignment ;
 ; Location ;                ;              ; SW[6]      ; PIN_AE11      ; QSF Assignment ;
@@ -203,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 419 ) ; 0.00 % ( 0 / 419 )         ; 0.00 % ( 0 / 419 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 419 ) ; 0.00 % ( 0 / 419 )         ; 0.00 % ( 0 / 419 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 379 ) ; 0.00 % ( 0 / 379 )         ; 0.00 % ( 0 / 379 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 379 ) ; 0.00 % ( 0 / 379 )         ; 0.00 % ( 0 / 379 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -227,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 419 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 379 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -243,14 +242,14 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 105 / 32,070       ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 105                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 140 / 32,070       ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 25                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 76                 ;       ;
-;         [c] ALMs used for registers                         ; 39                 ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 81 / 32,070        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 81                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 118 / 32,070       ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 27                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 55                 ;       ;
+;         [c] ALMs used for registers                         ; 36                 ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 35 / 32,070        ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 37 / 32,070        ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -259,28 +258,28 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 28 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 28                 ;       ;
+; Total LABs:  partially or completely used                   ; 20 / 3,207         ; < 1 % ;
+;     -- Logic LABs                                           ; 20                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 173                ;       ;
-;     -- 7 input functions                                    ; 1                  ;       ;
-;     -- 6 input functions                                    ; 28                 ;       ;
-;     -- 5 input functions                                    ; 35                 ;       ;
-;     -- 4 input functions                                    ; 62                 ;       ;
-;     -- <=3 input functions                                  ; 47                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 56                 ;       ;
+; Combinational ALUT usage for logic                          ; 142                ;       ;
+;     -- 7 input functions                                    ; 0                  ;       ;
+;     -- 6 input functions                                    ; 21                 ;       ;
+;     -- 5 input functions                                    ; 26                 ;       ;
+;     -- 4 input functions                                    ; 54                 ;       ;
+;     -- <=3 input functions                                  ; 41                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 60                 ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 132                ;       ;
+; Dedicated logic registers                                   ; 126                ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 127 / 64,140       ; < 1 % ;
-;         -- Secondary logic registers                        ; 5 / 64,140         ; < 1 % ;
+;         -- Primary logic registers                          ; 126 / 64,140       ; < 1 % ;
+;         -- Secondary logic registers                        ; 0 / 64,140         ; 0 %   ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 127                ;       ;
-;         -- Routing optimization registers                   ; 5                  ;       ;
+;         -- Design implementation registers                  ; 126                ;       ;
+;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 60 / 457           ; 13 %  ;
+; I/O pins                                                    ; 56 / 457           ; 12 %  ;
 ;     -- Clock pins                                           ; 4 / 8              ; 50 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 21             ; 0 %   ;
 ;                                                             ;                    ;       ;
@@ -332,12 +331,12 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 2.1% / 2.2% / 2.0% ;       ;
-; Maximum fan-out                                             ; 44                 ;       ;
-; Highest non-global fan-out                                  ; 44                 ;       ;
-; Total fan-out                                               ; 1146               ;       ;
-; Average fan-out                                             ; 2.38               ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.4% / 0.4% / 0.3% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 5.1% / 5.6% / 3.8% ;       ;
+; Maximum fan-out                                             ; 55                 ;       ;
+; Highest non-global fan-out                                  ; 55                 ;       ;
+; Total fan-out                                               ; 969                ;       ;
+; Average fan-out                                             ; 2.20               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -346,14 +345,14 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 105 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 105                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 140 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 25                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 76                    ; 0                              ;
-;         [c] ALMs used for registers                         ; 39                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 81 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 81                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 118 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 27                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 55                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 36                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 35 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 37 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )     ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
@@ -362,32 +361,32 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 28 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 28                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 20 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 20                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 173                   ; 0                              ;
-;     -- 7 input functions                                    ; 1                     ; 0                              ;
-;     -- 6 input functions                                    ; 28                    ; 0                              ;
-;     -- 5 input functions                                    ; 35                    ; 0                              ;
-;     -- 4 input functions                                    ; 62                    ; 0                              ;
-;     -- <=3 input functions                                  ; 47                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 56                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 142                   ; 0                              ;
+;     -- 7 input functions                                    ; 0                     ; 0                              ;
+;     -- 6 input functions                                    ; 21                    ; 0                              ;
+;     -- 5 input functions                                    ; 26                    ; 0                              ;
+;     -- 4 input functions                                    ; 54                    ; 0                              ;
+;     -- <=3 input functions                                  ; 41                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 60                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 127 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 5 / 64140 ( < 1 % )   ; 0 / 64140 ( 0 % )              ;
+;         -- Primary logic registers                          ; 126 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 0 / 64140 ( 0 % )     ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
-;         -- Design implementation registers                  ; 127                   ; 0                              ;
-;         -- Routing optimization registers                   ; 5                     ; 0                              ;
+;         -- Design implementation registers                  ; 126                   ; 0                              ;
+;         -- Routing optimization registers                   ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
-; I/O pins                                                    ; 60                    ; 0                              ;
+; I/O pins                                                    ; 56                    ; 0                              ;
 ; I/O registers                                               ; 0                     ; 0                              ;
 ; Total block memory bits                                     ; 0                     ; 0                              ;
 ; Total block memory implementation bits                      ; 0                     ; 0                              ;
@@ -400,15 +399,15 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 1146                  ; 0                              ;
-;     -- Registered Connections                               ; 652                   ; 0                              ;
+;     -- Total Connections                                    ; 969                   ; 0                              ;
+;     -- Registered Connections                               ; 609                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
 ;     -- hard_block:auto_generated_inst                       ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Partition Interface                                         ;                       ;                                ;
-;     -- Input Ports                                          ; 9                     ; 0                              ;
+;     -- Input Ports                                          ; 5                     ; 0                              ;
 ;     -- Output Ports                                         ; 51                    ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
@@ -435,13 +434,9 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; CLOCK_50 ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 5                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[0]   ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY[1]   ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY[2]   ; W15   ; 3B       ; 40           ; 0            ; 0            ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY[3]   ; Y16   ; 3B       ; 40           ; 0            ; 17           ; 14                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW[0]    ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW[1]    ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW[2]    ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 15                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; SW[3]    ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 16                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY[1]   ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY[2]   ; W15   ; 3B       ; 40           ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY[3]   ; Y16   ; 3B       ; 40           ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -511,7 +506,7 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 +----------+------------------+---------------+--------------+---------------+
 ; B2L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
 ; B1L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
-; 3A       ; 4 / 32 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 5 / 48 ( 10 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 7 / 80 ( 9 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5A       ; 31 / 32 ( 97 % ) ; 2.5V          ; --           ; 2.5V          ;
@@ -600,7 +595,7 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ; AB9      ; 42         ; 3A             ; #TDO                            ; output ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB10     ;            ; --             ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; AB11     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AB12     ; 72         ; 3A             ; SW[0]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB12     ; 72         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB13     ; 88         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB15     ; 106        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -630,7 +625,7 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ; AC9      ; 58         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC10     ;            ; 3A             ; VCCPD3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AC11     ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AC12     ; 82         ; 3A             ; SW[1]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AC12     ; 82         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC13     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AC14     ; 104        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC15     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -717,8 +712,8 @@ The pin-out file can be found in C:/Users/brhinman20/Documents/GitHub/SkeeballFi
 ; AF6      ; 75         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF7      ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AF8      ; 70         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AF9      ; 67         ; 3A             ; SW[2]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AF10     ; 57         ; 3A             ; SW[3]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AF9      ; 67         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AF10     ; 57         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF11     ; 87         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF12     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AF13     ; 93         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1487,14 +1482,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; LEDR[2]  ; Incomplete set of assignments ;
 ; LEDR[1]  ; Incomplete set of assignments ;
 ; LEDR[0]  ; Incomplete set of assignments ;
-; KEY[3]   ; Incomplete set of assignments ;
-; SW[3]    ; Incomplete set of assignments ;
-; KEY[2]   ; Incomplete set of assignments ;
-; SW[0]    ; Incomplete set of assignments ;
-; SW[1]    ; Incomplete set of assignments ;
-; SW[2]    ; Incomplete set of assignments ;
-; KEY[0]   ; Incomplete set of assignments ;
 ; KEY[1]   ; Incomplete set of assignments ;
+; KEY[3]   ; Incomplete set of assignments ;
+; KEY[2]   ; Incomplete set of assignments ;
+; KEY[0]   ; Incomplete set of assignments ;
 ; CLOCK_50 ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
@@ -1504,31 +1495,31 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node       ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name     ; Library Name ;
 +----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
-; |SkeeballFinal                   ; 104.5 (1.8)          ; 139.0 (2.2)                      ; 34.5 (0.3)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 173 (3)             ; 132 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 60   ; 0            ; |SkeeballFinal                                                   ; SkeeballFinal   ; work         ;
-;    |clk50MHzto1Hz:inst13|        ; 9.2 (0.0)            ; 36.7 (0.0)                       ; 27.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (0)              ; 75 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13                              ; clk50MHzto1Hz   ; work         ;
+; |SkeeballFinal                   ; 80.5 (2.2)           ; 118.0 (2.2)                      ; 37.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 142 (3)             ; 126 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 56   ; 0            ; |SkeeballFinal                                                   ; SkeeballFinal   ; work         ;
+;    |clk50MHzto1Hz:inst13|        ; 8.2 (0.0)            ; 37.5 (0.0)                       ; 29.3 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (0)              ; 75 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13                              ; clk50MHzto1Hz   ; work         ;
 ;       |my_MOD10:div10_1|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1             ; my_MOD10        ; work         ;
 ;       |my_MOD10:div10_2|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2             ; my_MOD10        ; work         ;
 ;       |my_MOD10:div10_3|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_3             ; my_MOD10        ; work         ;
 ;       |my_MOD10:div10_4|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_4             ; my_MOD10        ; work         ;
 ;       |my_MOD10:div10_5|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_5             ; my_MOD10        ; work         ;
-;       |my_MOD10:div10_6|         ; 1.0 (1.0)            ; 5.3 (5.3)                        ; 4.3 (4.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6             ; my_MOD10        ; work         ;
-;       |my_MOD10:div10_7|         ; 2.2 (2.2)            ; 3.9 (3.9)                        ; 1.8 (1.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_6|         ; 1.0 (1.0)            ; 5.0 (5.0)                        ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_6             ; my_MOD10        ; work         ;
+;       |my_MOD10:div10_7|         ; 1.2 (1.2)            ; 5.0 (5.0)                        ; 3.8 (3.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_7             ; my_MOD10        ; work         ;
 ;       |my_MOD5:div5_1|           ; 1.0 (1.0)            ; 2.5 (2.5)                        ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD5:div5_1               ; my_MOD5         ; work         ;
-;    |highforfive:inst14|          ; 1.8 (0.2)            ; 5.0 (1.0)                        ; 3.2 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (2)               ; 8 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14                                ; highforfive     ; work         ;
-;       |myCount5:countforfive|    ; 1.7 (1.7)            ; 4.0 (4.0)                        ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14|myCount5:countforfive          ; myCount5        ; work         ;
-;    |highforfive:inst15|          ; 2.0 (0.3)            ; 4.2 (0.8)                        ; 2.2 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (2)               ; 8 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15                                ; highforfive     ; work         ;
-;       |myCount5:countforfive|    ; 1.7 (1.7)            ; 3.4 (3.4)                        ; 1.8 (1.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15|myCount5:countforfive          ; myCount5        ; work         ;
-;    |skeeballBalls:inst10|        ; 13.0 (13.0)          ; 13.0 (13.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 14 (14)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                              ; skeeballBalls   ; work         ;
-;    |skeeballDisplay:instDisp|    ; 33.8 (6.3)           ; 35.7 (6.3)                       ; 1.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 66 (5)              ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp                          ; skeeballDisplay ; work         ;
-;       |hexDisplay:highDisplays|  ; 6.0 (6.0)            ; 6.2 (6.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:highDisplays  ; hexDisplay      ; work         ;
-;       |hexDisplay:lastDisplays|  ; 4.8 (4.8)            ; 5.0 (5.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:lastDisplays  ; hexDisplay      ; work         ;
-;       |hexDisplay:scoreDisplays| ; 6.8 (6.8)            ; 7.0 (7.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:scoreDisplays ; hexDisplay      ; work         ;
-;       |skeeballHex:dispHex0|     ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex0     ; skeeballHex     ; work         ;
-;       |skeeballHex:dispHex1|     ; 3.5 (3.5)            ; 5.0 (5.0)                        ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex1     ; skeeballHex     ; work         ;
-;       |skeeballHex:dispHex2|     ; 4.5 (4.5)            ; 4.8 (4.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex2     ; skeeballHex     ; work         ;
+;    |highforfive:inst14|          ; 1.7 (0.2)            ; 4.2 (0.8)                        ; 2.5 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (2)               ; 8 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14                                ; highforfive     ; work         ;
+;       |myCount5:countforfive|    ; 1.5 (1.5)            ; 3.4 (3.4)                        ; 1.9 (1.9)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14|myCount5:countforfive          ; myCount5        ; work         ;
+;    |highforfive:inst15|          ; 1.7 (0.0)            ; 4.8 (1.2)                        ; 3.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (2)               ; 8 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15                                ; highforfive     ; work         ;
+;       |myCount5:countforfive|    ; 1.7 (1.7)            ; 3.7 (3.7)                        ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15|myCount5:countforfive          ; myCount5        ; work         ;
+;    |skeeballBalls:inst10|        ; 17.0 (17.0)          ; 17.0 (17.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                              ; skeeballBalls   ; work         ;
+;    |skeeballDisplay:instDisp|    ; 36.2 (7.8)           ; 36.2 (7.8)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 66 (6)              ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp                          ; skeeballDisplay ; work         ;
+;       |hexDisplay:highDisplays|  ; 6.1 (6.1)            ; 6.1 (6.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:highDisplays  ; hexDisplay      ; work         ;
+;       |hexDisplay:lastDisplays|  ; 5.0 (5.0)            ; 5.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:lastDisplays  ; hexDisplay      ; work         ;
+;       |hexDisplay:scoreDisplays| ; 6.7 (6.7)            ; 6.8 (6.8)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:scoreDisplays ; hexDisplay      ; work         ;
+;       |skeeballHex:dispHex0|     ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex0     ; skeeballHex     ; work         ;
+;       |skeeballHex:dispHex1|     ; 4.7 (4.7)            ; 4.7 (4.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex1     ; skeeballHex     ; work         ;
+;       |skeeballHex:dispHex2|     ; 4.7 (4.7)            ; 5.0 (5.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex2     ; skeeballHex     ; work         ;
 ;       |skeeballHex:dispHex3|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex3     ; skeeballHex     ; work         ;
-;    |skeeballScore:instScore|     ; 41.3 (41.3)          ; 41.3 (41.3)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (57)             ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballScore:instScore                           ; skeeballScore   ; work         ;
-;    |skeeballState:inst12|        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballState:inst12                              ; skeeballState   ; work         ;
+;    |skeeballScore:instScore|     ; 13.2 (13.2)          ; 15.2 (15.2)                      ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballScore:instScore                           ; skeeballScore   ; work         ;
+;    |skeeballState:inst12|        ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 2 (2)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballState:inst12                              ; skeeballState   ; work         ;
 +----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1589,14 +1580,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[2]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[1]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[0]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; KEY[3]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[3]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[0]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[2]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[0]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[1]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[3]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[0]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; CLOCK_50 ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +----------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
@@ -1606,89 +1593,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                 ; Pad To Core Index ; Setting ;
 +-----------------------------------------------------+-------------------+---------+
-; KEY[3]                                              ;                   ;         ;
-;      - skeeballScore:instScore|Selector11~1         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~0         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~2         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~4         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~6         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~7         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~1          ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~3          ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~8         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~0        ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~2        ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~3        ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~4        ; 0                 ; 0       ;
-; SW[3]                                               ;                   ;         ;
-;      - skeeballScore:instScore|Selector11~1         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~2         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~4         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~7         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~1          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~3          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~6            ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~7            ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~0        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~2        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~3        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~4        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~12           ; 1                 ; 0       ;
-; KEY[2]                                              ;                   ;         ;
-;      - inst22~0                                     ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector11~0         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~0         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~2          ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~1        ; 0                 ; 0       ;
-; SW[0]                                               ;                   ;         ;
-;      - skeeballScore:instScore|Selector11~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~8         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~2          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~7          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~3            ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~1        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~9            ; 1                 ; 0       ;
-;      - inst22~0                                     ; 1                 ; 0       ;
-; SW[1]                                               ;                   ;         ;
-;      - skeeballScore:instScore|Selector11~0         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~4         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~0         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~7         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s~1            ; 0                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~3          ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s~5            ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~2        ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~4        ; 0                 ; 0       ;
-;      - skeeballScore:instScore|score1s~11           ; 0                 ; 0       ;
-; SW[2]                                               ;                   ;         ;
-;      - skeeballScore:instScore|Selector11~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~2         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~4         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s[4]~0         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~7         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector10~9         ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~1            ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~0          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|Selector9~3          ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~5            ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~2        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~3        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score10s[4]~4        ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~10           ; 1                 ; 0       ;
-;      - skeeballScore:instScore|score1s~11           ; 1                 ; 0       ;
-; KEY[0]                                              ;                   ;         ;
-;      - inst7                                        ; 0                 ; 0       ;
-;      - inst22~0                                     ; 0                 ; 0       ;
 ; KEY[1]                                              ;                   ;         ;
-;      - inst22~0                                     ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s[1]~0         ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s~1            ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s~2            ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s~5            ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s~7            ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score1s~9            ; 1                 ; 0       ;
+;      - inst22                                       ; 1                 ; 0       ;
+;      - skeeballScore:instScore|score10s[0]~5        ; 1                 ; 0       ;
+; KEY[3]                                              ;                   ;         ;
+;      - skeeballScore:instScore|score1s[1]~0         ; 0                 ; 0       ;
+;      - skeeballScore:instScore|score1s~1            ; 0                 ; 0       ;
+;      - skeeballScore:instScore|score1s~2            ; 0                 ; 0       ;
+;      - skeeballScore:instScore|score10s[0]~1        ; 0                 ; 0       ;
+;      - inst22                                       ; 0                 ; 0       ;
+; KEY[2]                                              ;                   ;         ;
+;      - skeeballScore:instScore|score1s[1]~0         ; 0                 ; 0       ;
+;      - skeeballScore:instScore|score1s~2            ; 0                 ; 0       ;
+;      - inst22                                       ; 0                 ; 0       ;
+;      - skeeballScore:instScore|score10s[0]~5        ; 0                 ; 0       ;
+; KEY[0]                                              ;                   ;         ;
+;      - inst7                                        ; 1                 ; 0       ;
+;      - inst22                                       ; 1                 ; 0       ;
 ; CLOCK_50                                            ;                   ;         ;
 ;      - clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E ; 0                 ; 0       ;
 +-----------------------------------------------------+-------------------+---------+
@@ -1701,26 +1628,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                             ; PIN_AF14            ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; CLOCK_50                                             ; PIN_AF14            ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J       ; FF_X40_Y3_N29       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J       ; FF_X56_Y3_N53       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J       ; FF_X61_Y5_N38       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J       ; FF_X65_Y5_N5        ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J       ; FF_X81_Y5_N47       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J       ; FF_X82_Y6_N2        ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E         ; FF_X37_Y3_N11       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; highforfive:inst14|comb~0                            ; MLABCELL_X82_Y8_N45 ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; highforfive:inst14|myCount5:countforfive|Y           ; MLABCELL_X82_Y8_N0  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; highforfive:inst15|comb~0                            ; MLABCELL_X84_Y8_N15 ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; highforfive:inst15|myCount5:countforfive|Y           ; MLABCELL_X84_Y8_N45 ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst22~0                                             ; LABCELL_X83_Y8_N48  ; 23      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; inst7                                                ; LABCELL_X83_Y8_N24  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; skeeballDisplay:instDisp|LessThan0~4                 ; LABCELL_X83_Y10_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; skeeballDisplay:instDisp|skeeballHex:dispHex0|Mux0~0 ; MLABCELL_X82_Y8_N18 ; 15      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; skeeballDisplay:instDisp|skeeballHex:dispHex0|Mux0~1 ; MLABCELL_X84_Y8_N51 ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; skeeballDisplay:instDisp|skeeballHex:dispHex2|Mux5~2 ; LABCELL_X83_Y8_N45  ; 22      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; skeeballScore:instScore|score10s[4]~5                ; MLABCELL_X82_Y7_N54 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; skeeballScore:instScore|score1s[4]~8                 ; MLABCELL_X82_Y7_N33 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; skeeballState:inst12|state[1]                        ; FF_X83_Y8_N44       ; 44      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J       ; FF_X46_Y3_N38       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J       ; FF_X56_Y3_N26       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J       ; FF_X57_Y3_N20       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J       ; FF_X60_Y3_N26       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J       ; FF_X67_Y5_N44       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J       ; FF_X70_Y7_N26       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E         ; FF_X46_Y3_N20       ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; highforfive:inst14|comb~0                            ; LABCELL_X74_Y7_N57  ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; highforfive:inst14|myCount5:countforfive|Y           ; LABCELL_X74_Y7_N18  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; highforfive:inst15|comb~0                            ; LABCELL_X73_Y7_N54  ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; highforfive:inst15|myCount5:countforfive|Y           ; LABCELL_X73_Y7_N39  ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst22                                               ; MLABCELL_X78_Y7_N6  ; 17      ; Clock        ; no     ; --                   ; --               ; --                        ;
+; inst7                                                ; LABCELL_X73_Y7_N0   ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; skeeballDisplay:instDisp|LessThan0~3                 ; MLABCELL_X78_Y6_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; skeeballDisplay:instDisp|skeeballHex:dispHex0|Mux0~0 ; LABCELL_X74_Y7_N51  ; 15      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; skeeballDisplay:instDisp|skeeballHex:dispHex0|Mux0~1 ; LABCELL_X77_Y7_N45  ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; skeeballScore:instScore|score10s[0]~1                ; MLABCELL_X78_Y7_N12 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; skeeballScore:instScore|score1s[1]~0                 ; MLABCELL_X78_Y7_N21 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; skeeballState:inst12|state[1]                        ; FF_X77_Y7_N20       ; 55      ; Clock        ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1738,14 +1664,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 283 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 10 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 90 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 64 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 347 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 20 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 269 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 317 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 47 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 12 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1801,12 +1727,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 150 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 52 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 44 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 46 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 119 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 125 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 116 / 12,676 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 129 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 400 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 773 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1867,9 +1793,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 60        ; 0            ; 60        ; 0            ; 0            ; 60        ; 60        ; 0            ; 60        ; 60        ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 56        ; 0            ; 56        ; 0            ; 0            ; 56        ; 56        ; 0            ; 56        ; 56        ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 51           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 60           ; 0         ; 60           ; 60           ; 0         ; 0         ; 60           ; 0         ; 0         ; 60           ; 9            ; 60           ; 60           ; 60           ; 60           ; 9            ; 60           ; 60           ; 60           ; 60           ; 9            ; 60           ; 60           ; 60           ; 60           ; 60           ; 60           ;
+; Total Inapplicable ; 0         ; 56           ; 0         ; 56           ; 56           ; 0         ; 0         ; 56           ; 0         ; 0         ; 56           ; 5            ; 56           ; 56           ; 56           ; 56           ; 5            ; 56           ; 56           ; 56           ; 56           ; 5            ; 56           ; 56           ; 56           ; 56           ; 56           ; 56           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; HEX0[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; HEX0[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1922,14 +1848,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; LEDR[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; KEY[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -1977,29 +1899,135 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary              ;
-+-----------------+----------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------+----------------------+-------------------+
-; CLOCK_50        ; CLOCK_50             ; 2.5               ;
-+-----------------+----------------------+-------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------------------+
+; Source Clock(s)                                                                                                                                      ; Destination Clock(s)                           ; Delay Added in ns ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------------------+
+; KEY[0],skeeballState:inst12|state[1]                                                                                                                 ; KEY[0],skeeballState:inst12|state[1]           ; 402.1             ;
+; KEY[0],highforfive:inst14|myCount5:countforfive|laststate.s5,highforfive:inst15|myCount5:countforfive|laststate.s5                                   ; KEY[0],skeeballState:inst12|state[1]           ; 83.0              ;
+; KEY[0],highforfive:inst14|myCount5:countforfive|laststate.s5,highforfive:inst15|myCount5:countforfive|laststate.s5,skeeballState:inst12|state[1]     ; KEY[0],skeeballState:inst12|state[1]           ; 61.9              ;
+; KEY[0],highforfive:inst14|myCount5:countforfive|laststate.s5,highforfive:inst15|myCount5:countforfive|laststate.s5,skeeballState:inst12|state[1],I/O ; KEY[0],skeeballState:inst12|state[1]           ; 27.7              ;
+; KEY[0],skeeballState:inst12|state[1]                                                                                                                 ; KEY[0],skeeballState:inst12|state[1],I/O       ; 14.8              ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 11.4              ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 9.6               ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 9.5               ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 9.3               ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 8.9               ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 8.8               ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J                                                                                                       ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 8.8               ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                   ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-; Source Register                              ; Destination Register                         ; Delay Added in ns ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.D ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E ; 1.038             ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.A ; 0.816             ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.A ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.B ; 0.335             ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.C ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.D ; 0.180             ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.B ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.C ; 0.169             ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-Note: This table only shows the top 5 path(s) that have the largest delay added for hold.
++-----------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                               ;
++----------------------------------------------------+----------------------------------------------------+-------------------+
+; Source Register                                    ; Destination Register                               ; Delay Added in ns ;
++----------------------------------------------------+----------------------------------------------------+-------------------+
+; skeeballState:inst12|state[1]                      ; skeeballBalls:inst10|balls[4]                      ; 8.860             ;
+; skeeballState:inst12|state[0]                      ; skeeballState:inst12|state[1]                      ; 8.119             ;
+; skeeballScore:instScore|score10s[0]                ; skeeballScore:instScore|score10s[2]                ; 8.036             ;
+; skeeballScore:instScore|score10s[1]                ; skeeballScore:instScore|score10s[2]                ; 8.036             ;
+; skeeballScore:instScore|score10s[2]                ; skeeballScore:instScore|score10s[2]                ; 8.036             ;
+; skeeballScore:instScore|score10s[3]                ; skeeballScore:instScore|score10s[2]                ; 8.036             ;
+; skeeballScore:instScore|score1s[0]                 ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; skeeballScore:instScore|score1s[1]                 ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; skeeballScore:instScore|score1s[2]                 ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; skeeballScore:instScore|score1s[3]                 ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; KEY[1]                                             ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; KEY[3]                                             ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; KEY[2]                                             ; skeeballScore:instScore|score10s[3]                ; 7.953             ;
+; skeeballBalls:inst10|balls[7]                      ; skeeballBalls:inst10|balls[8]                      ; 7.759             ;
+; skeeballBalls:inst10|balls[1]                      ; skeeballBalls:inst10|balls[0]                      ; 7.697             ;
+; skeeballBalls:inst10|balls[4]                      ; skeeballBalls:inst10|balls[0]                      ; 7.691             ;
+; skeeballBalls:inst10|balls[3]                      ; skeeballBalls:inst10|balls[4]                      ; 7.684             ;
+; skeeballBalls:inst10|balls[0]                      ; skeeballBalls:inst10|balls[3]                      ; 7.645             ;
+; skeeballBalls:inst10|balls[5]                      ; skeeballBalls:inst10|balls[8]                      ; 7.642             ;
+; skeeballBalls:inst10|balls[2]                      ; skeeballBalls:inst10|balls[4]                      ; 7.613             ;
+; skeeballBalls:inst10|balls[6]                      ; skeeballBalls:inst10|balls[8]                      ; 7.558             ;
+; skeeballBalls:inst10|balls[8]                      ; skeeballBalls:inst10|balls[8]                      ; 7.528             ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E       ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.A       ; 4.974             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.A     ; 2.668             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.A     ; 2.660             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.A     ; 2.486             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.A     ; 2.174             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.A     ; 2.133             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.A     ; 2.111             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.A     ; 1.738             ;
+; highforfive:inst14|myCount5:countforfive|pstate.s5 ; highforfive:inst14|myCount5:countforfive|pstate.s0 ; 1.044             ;
+; highforfive:inst15|myCount5:countforfive|pstate.s0 ; highforfive:inst15|myCount5:countforfive|pstate.s1 ; 1.033             ;
+; highforfive:inst14|myCount5:countforfive|pstate.s0 ; highforfive:inst14|myCount5:countforfive|pstate.s1 ; 1.033             ;
+; highforfive:inst15|myCount5:countforfive|pstate.s5 ; highforfive:inst15|myCount5:countforfive|pstate.s0 ; 1.028             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.B     ; 0.943             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.B     ; 0.933             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.B     ; 0.928             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.B     ; 0.926             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.B     ; 0.920             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.B     ; 0.912             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.A     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.B     ; 0.912             ;
+; highforfive:inst15|myCount5:countforfive|pstate.s2 ; highforfive:inst15|myCount5:countforfive|pstate.s3 ; 0.856             ;
+; highforfive:inst15|myCount5:countforfive|pstate.s1 ; highforfive:inst15|myCount5:countforfive|pstate.s2 ; 0.843             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.D     ; 0.755             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.F     ; 0.755             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.H     ; 0.755             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J     ; 0.755             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.D     ; 0.749             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.F     ; 0.749             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.H     ; 0.749             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J     ; 0.749             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.D     ; 0.746             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.F     ; 0.746             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.H     ; 0.746             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J     ; 0.746             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.C     ; 0.742             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.E     ; 0.742             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.G     ; 0.742             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.I     ; 0.742             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.D     ; 0.740             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.F     ; 0.740             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.H     ; 0.740             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J     ; 0.740             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.C     ; 0.735             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.E     ; 0.735             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.G     ; 0.735             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.I     ; 0.735             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.D     ; 0.733             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.F     ; 0.733             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.H     ; 0.733             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J     ; 0.733             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.C     ; 0.732             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.E     ; 0.732             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.G     ; 0.732             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.I     ; 0.732             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.C     ; 0.726             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.E     ; 0.726             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.G     ; 0.726             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.I     ; 0.726             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.D     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.F     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.H     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.C     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.D     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.E     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.F     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.G     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.H     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.I     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J     ; 0.725             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.C     ; 0.719             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.E     ; 0.719             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.G     ; 0.719             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.I     ; 0.719             ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.D       ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E       ; 0.717             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.C     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.E     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.G     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.I     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.B     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.C     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.D     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.E     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.F     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.G     ; 0.711             ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.H     ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.I     ; 0.711             ;
++----------------------------------------------------+----------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2019,36 +2047,27 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (332104): Reading SDC File: 'my.sdc'
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332060): Node: KEY[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register skeeballScore:instScore|score1s[0] is being clocked by KEY[0]
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register highforfive:inst14|myCount5:countforfive|pstate.s0 is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J
-Warning (332060): Node: clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J is being clocked by clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E
-Warning (332060): Node: highforfive:inst14|myCount5:countforfive|laststate.s5 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register highforfive:inst14|isHigh is being clocked by highforfive:inst14|myCount5:countforfive|laststate.s5
-Warning (332060): Node: highforfive:inst15|myCount5:countforfive|laststate.s5 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register highforfive:inst15|isHigh is being clocked by highforfive:inst15|myCount5:countforfive|laststate.s5
-Warning (332060): Node: skeeballState:inst12|state[1] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register skeeballDisplay:instDisp|highscore[0] is being clocked by skeeballState:inst12|state[1]
+Warning (332191): Clock target skeeballState:inst12|state[1] of clock skeeballState:inst12|state[1] is fed by another target of the same clock.
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst7  from: datab  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
-Info (332111): Found 1 clocks
+Info (332111): Found 13 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J
+    Info (332111):   20.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J
     Info (332111):   20.000     CLOCK_50
+    Info (332111):  200.000 highforfive:inst14|myCount5:countforfive|laststate.s5
+    Info (332111):  200.000 highforfive:inst15|myCount5:countforfive|laststate.s5
+    Info (332111):  200.000       KEY[0]
+    Info (332111):  200.000 skeeballState:inst12|state[1]
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
@@ -2056,13 +2075,17 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "CLOCK3_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "CLOCK4_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[9]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "SW[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[4]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[6]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[8]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[9]" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2071,12 +2094,12 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
+    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X67_Y0 to location X77_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (11888): Total time spent on timing analysis during the Fitter is 1.00 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2084,11 +2107,11 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/output_files/SkeeballFinal.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 6594 megabytes
-    Info: Processing ended: Mon Mar 27 17:29:59 2023
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:48
+Info: Quartus Prime Fitter was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 6602 megabytes
+    Info: Processing ended: Wed Mar 29 16:24:43 2023
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:56
 
 
 +----------------------------+

@@ -15,8 +15,8 @@ module skeeballScore(playstate, clk, in0, in10, in20, in30, in40, in50, in100, s
 	assign points[1] = in10;
 	assign points[0] = in0;
 	
-	reg [6:0] score10s, score1s;
-	reg [6:0] tempSum;
+	reg carry;
+	reg [3:0] score10s, score1s;
 	reg [7:0] adderPoints;
 	
 	assign score[7:4] = score10s[3:0];
@@ -26,65 +26,256 @@ module skeeballScore(playstate, clk, in0, in10, in20, in30, in40, in50, in100, s
 		begin
 				if (playstate == 1'b0)
 					begin
-						score10s = 6'b000000;
-						score1s = 6'b000000;
+						score10s = 4'b0000;
+						score1s = 4'b0000;
 					end
 				else
 					begin
 						casex(points)
-							7'b1XXXXXX: score10s = score10s + 6'b000001; // 10
-							7'b01XXXXX: begin
-								tempSum = score1s + 6'b000101; // 5
-								if (tempSum > 6'b001001)
-									begin
-										tempSum = tempSum + 6'b000110;
-										score10s = score10s + 6'b000001;
-										score1s = tempSum[4:0];
-									end
-								else score1s = tempSum[4:0];
+							7'b1XXXXXX: begin // 100
+									carry = 1'b1;
 								end
-							7'b001XXXX: begin
-								tempSum = score1s + 6'b00100; // 4
-								if (tempSum > 6'b001001)
-									begin
-										tempSum = tempSum + 6'b000110;
-										score10s = score10s + 6'b000001;
-										score1s = tempSum[4:0];
-									end
-								else score1s = tempSum[4:0];
+							7'b01XXXXX: begin // 50
+									case(score1s)
+										4'b0000: begin // 0
+												score1s = 4'b0101;
+											end
+										4'b0001: begin // 1
+												score1s = 4'b0110;
+											end
+										4'b0010: begin // 2
+												score1s = 4'b0111;
+											end
+										4'b0011: begin // 3
+												score1s = 4'b1000;
+											end
+										4'b0100: begin // 4
+												score1s = 4'b1001;
+											end
+										4'b0101: begin // 5
+												score1s = 4'b0000;
+												carry = 1'b1;
+											end
+										4'b0110: begin // 6
+												score1s = 4'b0001;
+												carry = 1'b1;
+											end
+										4'b0111: begin // 7
+												score1s = 4'b0010;
+												carry = 1'b1;
+											end
+										4'b1000: begin // 8
+												score1s = 4'b0011;
+												carry = 1'b1;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0100;
+												carry = 1'b1;
+											end
+										default: begin // Error, rollover
+												score1s = 4'b1111;
+											end
+									endcase
 								end
-							7'b0001XXX: begin
-								tempSum = score1s + 6'b000011; // 3
-								if (tempSum > 6'b001001)
-									begin
-										tempSum = tempSum + 6'b000110;
-										score10s = score10s + 6'b000001;
-										score1s = tempSum[4:0];
-									end
-								else score1s = tempSum[4:0];
+							7'b001XXXX: begin // 40
+									case(score1s)
+										4'b0000: begin // 0
+												score1s = 4'b0100;
+											end
+										4'b0001: begin // 1
+												score1s = 4'b0101;
+											end
+										4'b0010: begin // 2
+												score1s = 4'b0110;
+											end
+										4'b0011: begin // 3
+												score1s = 4'b0011;
+											end
+										4'b0100: begin // 4
+												score1s = 4'b0111;
+											end
+										4'b0101: begin // 5
+												score1s = 4'b1000;
+											end
+										4'b0110: begin // 6
+												score1s = 4'b1001;
+											end
+										4'b0111: begin // 7
+												score1s = 4'b0000;
+												carry = 1'b1;
+											end
+										4'b1000: begin // 8
+												score1s = 4'b0001;
+												carry = 1'b1;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0010;
+												carry = 1'b1;
+											end
+										default: begin // Error, rollover
+												score1s = 4'b1111;
+											end
+									endcase
 								end
-							7'b00001XX: begin
-								tempSum = score1s + 6'b000010; // 2
-								if (tempSum > 6'b001001)
-									begin
-										tempSum = tempSum + 6'b000110;
-										score10s = score10s + 6'b000001;
-										score1s = tempSum[4:0];
-									end
-								else score1s = tempSum[4:0];
+							7'b0001XXX: begin // 30
+									case(score1s)
+										4'b0000: begin // 0
+												score1s = 4'b0011;
+											end
+										4'b0001: begin // 1
+												score1s = 4'b0100;
+											end
+										4'b0010: begin // 2
+												score1s = 4'b0101;
+											end
+										4'b0011: begin // 3
+												score1s = 4'b0110;
+											end
+										4'b0100: begin // 4
+												score1s = 4'b0111;
+											end
+										4'b0101: begin // 5
+												score1s = 4'b1000;
+											end
+										4'b0110: begin // 6
+												score1s = 4'b1001;
+											end
+										4'b0111: begin // 7
+												score1s = 4'b0000;
+												carry = 1'b1;
+											end
+										4'b1000: begin // 8
+												score1s = 4'b0001;
+												carry = 1'b1;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0010;
+												carry = 1'b1;
+											end
+										default: begin // Error, rollover
+												score1s = 4'b1111;
+											end
+									endcase
 								end
-							7'b000001X: begin
-								tempSum = score1s + 6'b000001; // 1
-								if (tempSum > 6'b001001)
-									begin
-										tempSum = tempSum + 6'b000110;
-										score10s = score10s + 6'b000001;
-										score1s = tempSum[4:0];
-									end
-								else score1s = tempSum[4:0];
+							7'b00001XX: begin // 20
+									case(score1s)
+										4'b0000: begin // 0
+												score1s = 4'b0010;
+											end
+										4'b0001: begin // 1
+												score1s = 4'b0011;
+											end
+										4'b0010: begin // 2
+												score1s = 4'b0100;
+											end
+										4'b0011: begin // 3
+												score1s = 4'b0101;
+											end
+										4'b0100: begin // 4
+												score1s = 4'b0110;
+											end
+										4'b0101: begin // 5
+												score1s = 4'b0111;
+											end
+										4'b0110: begin // 6
+												score1s = 4'b1000;
+											end
+										4'b0111: begin // 7
+												score1s = 4'b1001;
+											end
+										4'b1000: begin // 8
+												score1s = 4'b0000;
+												carry = 1'b1;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0001;
+												carry = 1'b1;
+											end
+										default: begin // Error, rollover
+												score1s = 4'b1111;
+											end
+									endcase
 								end
-							default: score1s = score1s;
+							7'b000001X: begin // 10
+									case(score1s)
+										4'b0000: begin // 0
+												score1s = 4'b0001;
+											end
+										4'b0001: begin // 1
+												score1s = 4'b0010;
+											end
+										4'b0010: begin // 2
+												score1s = 4'b0011;
+											end
+										4'b0011: begin // 3
+												score1s = 4'b0100;
+											end
+										4'b0100: begin // 4
+												score1s = 4'b0101;
+											end
+										4'b0101: begin // 5
+												score1s = 4'b0110;
+											end
+										4'b0110: begin // 6
+												score1s = 4'b0111;
+											end
+										4'b0111: begin // 7
+												score1s = 4'b1000;
+											end
+										4'b1000: begin // 8
+												score1s = 4'b1001;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0000;
+												carry = 1'b1;
+											end
+										default: begin // Error, rollover
+												score1s = 4'b1111;
+											end
+									endcase
+								end
+							default: begin
+									score1s = score1s;
+								end
 						endcase
+						if(carry == 1'b1) begin
+								case(score10s)
+										4'b0000: begin // 0
+												score10s = 4'b0001;
+											end
+										4'b0001: begin // 1
+												score10s = 4'b0010;
+											end
+										4'b0010: begin // 2
+												score10s = 4'b0011;
+											end
+										4'b0011: begin // 3
+												score10s = 4'b0100;
+											end
+										4'b0100: begin // 4
+												score10s = 4'b0101;
+											end
+										4'b0101: begin // 5
+												score10s = 4'b0110;
+											end
+										4'b0110: begin // 6
+												score10s = 4'b0111;
+											end
+										4'b0111: begin // 7
+												score10s = 4'b1000;
+											end
+										4'b1000: begin // 8
+												score10s = 4'b1001;
+											end
+										4'b1001: begin // 9, rollover
+												score10s = 4'b0000;
+											end
+										default: begin // Error, rollover
+												score10s = 4'b1111;
+											end
+								endcase
+								carry = 1'b0;
+							end
 					end
 		end
 	
