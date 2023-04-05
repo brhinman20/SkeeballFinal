@@ -19,7 +19,7 @@ module skeeballBalls(game, clk, balls);
 	parameter balls1 = 9'b000000001;
 	parameter balls0 = 9'b000000000;
 
-	always @ (posedge clk)
+	always @ (negedge clk)
 		begin
 			if (game==1'b0) balls = balls9;
 			else begin

@@ -2,724 +2,660 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'skeeballState:inst11|state[1]'
+Slack : -3.082
+TNS   : -25.080
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : 0.815
+TNS   : 0.000
+
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : 5.275
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 7.067
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 7.173
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 7.198
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 7.416
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 7.486
+Slack : 1.178
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 7.608
+Slack : 7.406
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 7.454
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 7.460
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 7.552
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 7.621
+Slack : 7.565
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 7.610
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 7.667
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 17.580
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'skeeballState:inst12|state[1]'
-Slack : 80.476
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 81.594
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 81.861
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
-Slack : 83.873
+Slack : 17.470
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.414
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 0.523
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 0.530
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 0.552
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 0.582
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 0.583
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 0.595
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 0.619
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.803
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 1.257
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'skeeballState:inst12|state[1]'
-Slack : 1.281
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
-Slack : 1.285
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 1.778
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 7.140
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 87.005
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 90.856
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.996
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 1.803
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 3.078
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.132
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 9.276
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 9.276
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 9.305
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 9.372
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 9.387
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 9.401
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 9.406
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 9.427
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'skeeballState:inst12|state[1]'
-Slack : 98.275
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : 99.065
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 99.383
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 99.410
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : 5.661
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 7.070
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 7.192
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 7.212
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 7.412
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 7.517
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 7.567
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 7.632
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 17.618
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'skeeballState:inst12|state[1]'
-Slack : 81.313
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 82.223
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 82.526
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
-Slack : 84.651
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.398
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 0.490
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 0.511
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 0.533
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 0.608
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 0.608
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 0.624
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 0.642
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.747
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 1.175
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'skeeballState:inst12|state[1]'
-Slack : 1.206
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
-Slack : 1.223
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 1.733
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 7.744
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 87.554
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 91.107
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.929
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 1.760
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 2.930
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.123
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 9.278
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 9.293
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 9.314
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 9.351
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 9.388
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 9.394
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 9.410
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 9.422
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'skeeballState:inst12|state[1]'
-Slack : 98.260
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : 99.060
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 99.355
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 99.400
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : 5.859
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 7.735
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 7.747
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 7.863
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 7.960
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 7.983
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 8.079
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 8.289
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 18.279
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'skeeballState:inst12|state[1]'
-Slack : 86.032
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 86.954
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 87.068
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
-Slack : 88.300
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 0.177
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.237
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 0.249
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 0.263
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 0.282
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 0.285
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 0.287
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 0.297
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.426
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'skeeballState:inst12|state[1]'
-Slack : 0.581
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 0.650
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.756
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 0.905
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 10.684
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 90.627
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 93.984
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.572
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 1.134
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 1.630
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.125
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 9.498
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 9.499
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 9.524
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 9.599
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 9.618
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 9.634
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 9.641
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 9.643
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'skeeballState:inst12|state[1]'
-Slack : 98.538
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : 99.021
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 99.625
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 99.636
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : 6.574
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 7.969
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 7.974
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 8.056
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 8.159
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 8.161
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 8.253
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 8.409
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 18.404
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'skeeballState:inst12|state[1]'
-Slack : 87.705
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 88.383
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 88.500
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
-Slack : 89.904
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 0.136
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 0.166
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.208
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 0.215
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 0.220
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 0.220
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 0.223
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
-Slack : 0.242
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
 Slack : 0.373
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'skeeballState:inst12|state[1]'
-Slack : 0.512
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 0.457
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 0.529
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 0.520
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 0.552
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 0.574
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.807
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'skeeballState:inst11|state[1]'
+Slack : 0.949
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 13.425
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 33.318
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 34.173
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 0.922
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 1.339
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 1.896
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 9.294
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 9.315
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 9.364
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 9.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 9.375
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 9.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 9.423
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 9.424
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 59.071
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'skeeballState:inst11|state[1]'
+Slack : 99.132
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 99.382
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 99.399
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : 113.849
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'skeeballState:inst11|state[1]'
+Slack : -2.638
+TNS   : -21.460
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : 1.029
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 1.412
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 7.415
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 7.447
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 7.450
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 7.532
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 7.581
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 7.587
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 7.629
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 17.500
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 0.521
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'skeeballState:inst11|state[1]'
+Slack : 0.877
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.878
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 13.385
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 33.376
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 34.116
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 0.865
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 1.288
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 1.878
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 9.313
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 9.340
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 9.366
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 9.375
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 9.382
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 9.413
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 9.426
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 9.430
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 59.036
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'skeeballState:inst11|state[1]'
+Slack : 99.148
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 99.361
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 99.373
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : 113.855
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'skeeballState:inst11|state[1]'
+Slack : 1.240
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 1.792
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : 3.159
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 7.991
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 8.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 8.045
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 8.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 8.117
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 8.188
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 8.210
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 18.183
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'skeeballState:inst11|state[1]'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.633
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 15.811
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 35.760
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 36.473
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.836
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 1.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 9.542
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 9.558
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 9.578
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 9.584
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 9.596
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 9.644
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 9.645
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 9.653
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 59.014
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'skeeballState:inst11|state[1]'
+Slack : 99.351
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 99.644
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 99.655
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : 113.816
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 2.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'skeeballState:inst11|state[1]'
+Slack : 2.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : 4.110
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 8.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 8.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 8.210
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 8.240
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 8.277
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 8.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 8.345
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 18.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.395
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.695
+Slack : 0.404
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 0.785
+Type  : Fast 1100mV 0C Model Hold 'skeeballState:inst11|state[1]'
+Slack : 0.440
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 11.886
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 91.816
+Slack : 16.041
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 94.443
+Slack : 36.018
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 0.474
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 0.956
+Type  : Fast 1100mV 0C Model Recovery 'highforfive:inst14|myCount5:countforfive|laststate.s5'
+Slack : 36.618
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 1.422
+Slack : 0.365
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.117
+Type  : Fast 1100mV 0C Model Removal 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
+Slack : 0.708
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
-Slack : 9.532
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
-Slack : 9.538
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
-Slack : 9.559
+Type  : Fast 1100mV 0C Model Removal 'highforfive:inst15|myCount5:countforfive|laststate.s5'
+Slack : 0.997
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J'
-Slack : 9.616
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
-Slack : 9.630
+Slack : 9.572
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J'
-Slack : 9.632
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
-Slack : 9.643
+Slack : 9.579
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J'
+Slack : 9.600
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J'
+Slack : 9.604
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J'
+Slack : 9.604
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E'
 Slack : 9.651
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'skeeballState:inst12|state[1]'
-Slack : 98.726
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J'
+Slack : 9.652
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : 99.013
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J'
+Slack : 9.660
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 59.012
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'skeeballState:inst11|state[1]'
+Slack : 99.408
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'highforfive:inst14|myCount5:countforfive|laststate.s5'
-Slack : 99.634
+Slack : 99.642
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'highforfive:inst15|myCount5:countforfive|laststate.s5'
-Slack : 99.646
+Slack : 99.653
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : 113.858
 TNS   : 0.000
 
 ------------------------------------------------------------

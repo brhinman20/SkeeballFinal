@@ -6,11 +6,25 @@ HEX0[3] <= skeeballDisplay:instDisp.HEX0[3]
 HEX0[4] <= skeeballDisplay:instDisp.HEX0[4]
 HEX0[5] <= skeeballDisplay:instDisp.HEX0[5]
 HEX0[6] <= skeeballDisplay:instDisp.HEX0[6]
-KEY[0] => inst9.IN0
-KEY[1] => instNot3.IN0
-KEY[2] => instNot2.IN0
-KEY[3] => instNot10.IN0
+CLOCK_50 => skeeballState:inst11.clk
 CLOCK_50 => clk50MHzto1Hz:inst13.CLOCK_50
+CLOCK_50 => skeeballScore:instScore.clk
+KEY[0] => inst9.IN0
+KEY[1] => ~NO_FANOUT~
+KEY[2] => instNotAll13.IN0
+SW[0] => inst20.IN1
+SW[0] => skeeballScore:instScore.in0
+SW[1] => inst23.IN0
+SW[1] => skeeballScore:instScore.in10
+SW[2] => inst23.IN2
+SW[2] => skeeballScore:instScore.in20
+SW[3] => ~NO_FANOUT~
+SW[4] => inst23.IN3
+SW[4] => skeeballScore:instScore.in40
+SW[5] => inst23.IN4
+SW[5] => skeeballScore:instScore.in50
+SW[6] => inst23.IN5
+SW[6] => skeeballScore:instScore.in100
 HEX1[0] <= skeeballDisplay:instDisp.HEX1[0]
 HEX1[1] <= skeeballDisplay:instDisp.HEX1[1]
 HEX1[2] <= skeeballDisplay:instDisp.HEX1[2]
@@ -518,6 +532,14 @@ clk => score10s[0].CLK
 clk => score10s[1].CLK
 clk => score10s[2].CLK
 clk => score10s[3].CLK
+ballclk => score[0]~reg0.CLK
+ballclk => score[1]~reg0.CLK
+ballclk => score[2]~reg0.CLK
+ballclk => score[3]~reg0.CLK
+ballclk => score[4]~reg0.CLK
+ballclk => score[5]~reg0.CLK
+ballclk => score[6]~reg0.CLK
+ballclk => score[7]~reg0.CLK
 in0 => Decoder2.IN6
 in10 => Decoder2.IN5
 in20 => Decoder2.IN4
@@ -525,17 +547,17 @@ in30 => Decoder2.IN3
 in40 => Decoder2.IN2
 in50 => Decoder2.IN1
 in100 => Decoder2.IN0
-score[0] <= score1s[0].DB_MAX_OUTPUT_PORT_TYPE
-score[1] <= score1s[1].DB_MAX_OUTPUT_PORT_TYPE
-score[2] <= score1s[2].DB_MAX_OUTPUT_PORT_TYPE
-score[3] <= score1s[3].DB_MAX_OUTPUT_PORT_TYPE
-score[4] <= score10s[0].DB_MAX_OUTPUT_PORT_TYPE
-score[5] <= score10s[1].DB_MAX_OUTPUT_PORT_TYPE
-score[6] <= score10s[2].DB_MAX_OUTPUT_PORT_TYPE
-score[7] <= score10s[3].DB_MAX_OUTPUT_PORT_TYPE
+score[0] <= score[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[1] <= score[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[2] <= score[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[3] <= score[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[4] <= score[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[5] <= score[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[6] <= score[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+score[7] <= score[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SkeeballFinal|skeeballStateDecode:inst11
+|SkeeballFinal|skeeballStateDecode:inst2
 state[0] => playingState.IN0
 state[0] => scoreState.IN0
 state[0] => menuState.IN0
@@ -550,9 +572,13 @@ finishState <= finishState.DB_MAX_OUTPUT_PORT_TYPE
 scoreState <= scoreState.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SkeeballFinal|skeeballState:inst12
-trigger => state[0]~reg0.CLK
-trigger => state[1]~reg0.CLK
+|SkeeballFinal|skeeballState:inst11
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+trigger => state.OUTPUTSELECT
+trigger => state.OUTPUTSELECT
+trigger => state.OUTPUTSELECT
+trigger => state.OUTPUTSELECT
 state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 

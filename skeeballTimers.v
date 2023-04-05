@@ -25,6 +25,18 @@ assign y = offSignal;
 endmodule
 
 
+module my8bff(val, clk, out);
+input [7:0] val;
+input clk;
+output [7:0] out;
+reg [7:0] out;
+
+always @ (posedge clk)
+begin
+	out = val;
+end
+endmodule
+
 
 module myCount5 (clk, Reset, state, Y);
 	input clk, Reset;
