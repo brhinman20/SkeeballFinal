@@ -1,5 +1,5 @@
 Timing Analyzer report for SkeeballFinal
-Wed Apr  5 15:39:20 2023
+Fri Apr  7 17:56:56 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
 
 
@@ -103,13 +103,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.18        ;
+; Average used               ; 1.19        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.2%      ;
-;     Processor 3            ;   6.1%      ;
+;     Processor 2            ;   6.3%      ;
+;     Processor 3            ;   6.2%      ;
 ;     Processor 4            ;   6.1%      ;
 +----------------------------+-------------+
 
@@ -119,7 +119,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+--------+--------------------------+
 ; SDC File Path     ; Status ; Read at                  ;
 +-------------------+--------+--------------------------+
-; SkeeballFinal.sdc ; OK     ; Wed Apr  5 15:39:16 2023 ;
+; SkeeballFinal.sdc ; OK     ; Fri Apr  7 17:56:52 2023 ;
 +-------------------+--------+--------------------------+
 
 
@@ -128,19 +128,19 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------+
 ; Clock Name                                            ; Type ; Period  ; Frequency ; Rise  ; Fall    ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                   ;
 +-------------------------------------------------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------+
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E }          ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J }        ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; Base ; 20.000  ; 50.0 MHz  ; 0.000 ; 10.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J }        ;
-; CLOCK_50                                              ; Base ; 120.000 ; 8.33 MHz  ; 0.000 ; 60.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }                                              ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; Base ; 200.000 ; 5.0 MHz   ; 0.000 ; 100.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { highforfive:inst14|myCount5:countforfive|laststate.s5 } ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; Base ; 200.000 ; 5.0 MHz   ; 0.000 ; 100.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { highforfive:inst15|myCount5:countforfive|laststate.s5 } ;
-; KEY[0]                                                ; Base ; 230.000 ; 4.35 MHz  ; 0.000 ; 115.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] }                                                ;
-; skeeballState:inst11|state[1]                         ; Base ; 200.000 ; 5.0 MHz   ; 0.000 ; 100.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { skeeballState:inst11|state[1] }                         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E }          ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J }        ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J }        ;
+; CLOCK_50                                              ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }                                              ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { highforfive:inst14|myCount5:countforfive|laststate.s5 } ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; Base ; 250.000 ; 4.0 MHz   ; 0.000 ; 125.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { highforfive:inst15|myCount5:countforfive|laststate.s5 } ;
+; KEY[0]                                                ; Base ; 400.000 ; 2.5 MHz   ; 0.000 ; 200.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] }                                                ;
+; skeeballState:inst11|state[1]                         ; Base ; 500.000 ; 2.0 MHz   ; 0.000 ; 250.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { skeeballState:inst11|state[1] }                         ;
 +-------------------------------------------------------+------+---------+-----------+-------+---------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------+
 
 
@@ -149,17 +149,17 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                     ; Note ;
 +------------+-----------------+------------------------------------------------+------+
-; 44.19 MHz  ; 44.19 MHz       ; skeeballState:inst11|state[1]                  ;      ;
-; 105.86 MHz ; 105.86 MHz      ; KEY[0]                                         ;      ;
-; 124.83 MHz ; 124.83 MHz      ; CLOCK_50                                       ;      ;
-; 395.26 MHz ; 395.26 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ;      ;
-; 401.45 MHz ; 401.45 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ;      ;
-; 433.28 MHz ; 433.28 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ;      ;
-; 437.64 MHz ; 437.64 MHz      ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ;      ;
-; 460.41 MHz ; 460.41 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ;      ;
-; 461.89 MHz ; 461.89 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ;      ;
-; 465.77 MHz ; 465.77 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ;      ;
-; 468.6 MHz  ; 468.6 MHz       ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ;      ;
+; 31.04 MHz  ; 31.04 MHz       ; skeeballState:inst11|state[1]                  ;      ;
+; 75.8 MHz   ; 75.8 MHz        ; KEY[0]                                         ;      ;
+; 104.84 MHz ; 104.84 MHz      ; CLOCK_50                                       ;      ;
+; 377.93 MHz ; 377.93 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ;      ;
+; 388.8 MHz  ; 388.8 MHz       ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ;      ;
+; 426.99 MHz ; 426.99 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ;      ;
+; 446.23 MHz ; 446.23 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ;      ;
+; 454.34 MHz ; 454.34 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ;      ;
+; 463.18 MHz ; 463.18 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ;      ;
+; 463.82 MHz ; 463.82 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ;      ;
+; 468.16 MHz ; 468.16 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ;      ;
 +------------+-----------------+------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -170,23 +170,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+-------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary                                     ;
-+------------------------------------------------+--------+---------------+
-; Clock                                          ; Slack  ; End Point TNS ;
-+------------------------------------------------+--------+---------------+
-; skeeballState:inst11|state[1]                  ; -3.082 ; -25.080       ;
-; KEY[0]                                         ; 0.815  ; 0.000         ;
-; CLOCK_50                                       ; 1.178  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 7.406  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 7.454  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 7.460  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 7.552  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 7.565  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 7.610  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 7.667  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 17.470 ; 0.000         ;
-+------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary                                      ;
++------------------------------------------------+---------+---------------+
+; Clock                                          ; Slack   ; End Point TNS ;
++------------------------------------------------+---------+---------------+
+; KEY[0]                                         ; 36.996  ; 0.000         ;
+; CLOCK_50                                       ; 38.910  ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 83.137  ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 122.282 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 122.364 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 122.520 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 122.537 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 122.567 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 122.672 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 122.743 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 247.354 ; 0.000         ;
++------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------+
@@ -194,29 +194,29 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; CLOCK_50                                       ; 0.373 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.457 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.473 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.482 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.520 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.530 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.552 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.574 ; 0.000         ;
-; KEY[0]                                         ; 0.807 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.925 ; 0.000         ;
-; skeeballState:inst11|state[1]                  ; 0.949 ; 0.000         ;
+; CLOCK_50                                       ; 0.374 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.444 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.493 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.518 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.526 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.537 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.539 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.600 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.952 ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 1.262 ; 0.000         ;
+; KEY[0]                                         ; 1.371 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Recovery Summary                                         ;
-+-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; Slack  ; End Point TNS ;
-+-------------------------------------------------------+--------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 13.425 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 33.318 ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 34.173 ; 0.000         ;
-+-------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Recovery Summary                                          ;
++-------------------------------------------------------+---------+---------------+
+; Clock                                                 ; Slack   ; End Point TNS ;
++-------------------------------------------------------+---------+---------------+
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 241.683 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 241.986 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 243.551 ; 0.000         ;
++-------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -224,9 +224,9 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.922 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 1.339 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 1.896 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 1.019 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 1.221 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 1.691 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -235,19 +235,19 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 9.294   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 9.315   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 9.364   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 9.373   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 9.375   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 9.410   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 9.423   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 9.424   ; 0.000         ;
-; CLOCK_50                                              ; 59.071  ; 0.000         ;
-; skeeballState:inst11|state[1]                         ; 99.132  ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 99.382  ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 99.399  ; 0.000         ;
-; KEY[0]                                                ; 113.849 ; 0.000         ;
+; CLOCK_50                                              ; 124.013 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 124.292 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 124.367 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 124.386 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 124.397 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 124.397 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 124.404 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 124.406 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 124.407 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 124.416 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 124.419 ; 0.000         ;
+; KEY[0]                                                ; 198.974 ; 0.000         ;
+; skeeballState:inst11|state[1]                         ; 249.296 ; 0.000         ;
 +-------------------------------------------------------+---------+---------------+
 
 
@@ -258,7 +258,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 8
 Shortest Synchronizer Chain: 4 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 161.254 ns
+Worst Case Available Settling Time: 990.923 ns
 
 
 
@@ -268,38 +268,38 @@ Worst Case Available Settling Time: 161.254 ns
 +------------+-----------------+------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                     ; Note ;
 +------------+-----------------+------------------------------------------------+------+
-; 45.79 MHz  ; 45.79 MHz       ; skeeballState:inst11|state[1]                  ;      ;
-; 110.42 MHz ; 110.42 MHz      ; KEY[0]                                         ;      ;
-; 130.94 MHz ; 130.94 MHz      ; CLOCK_50                                       ;      ;
-; 400.0 MHz  ; 400.0 MHz       ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ;      ;
-; 411.52 MHz ; 411.52 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ;      ;
-; 437.06 MHz ; 437.06 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ;      ;
-; 444.84 MHz ; 444.84 MHz      ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ;      ;
-; 458.72 MHz ; 458.72 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ;      ;
-; 470.59 MHz ; 470.59 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ;      ;
-; 472.37 MHz ; 472.37 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ;      ;
-; 475.06 MHz ; 475.06 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ;      ;
+; 32.2 MHz   ; 32.2 MHz        ; skeeballState:inst11|state[1]                  ;      ;
+; 78.8 MHz   ; 78.8 MHz        ; KEY[0]                                         ;      ;
+; 110.22 MHz ; 110.22 MHz      ; CLOCK_50                                       ;      ;
+; 387.15 MHz ; 387.15 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ;      ;
+; 398.09 MHz ; 398.09 MHz      ; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ;      ;
+; 434.03 MHz ; 434.03 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ;      ;
+; 448.83 MHz ; 448.83 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ;      ;
+; 466.85 MHz ; 466.85 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ;      ;
+; 466.85 MHz ; 466.85 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ;      ;
+; 472.37 MHz ; 472.37 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ;      ;
+; 477.55 MHz ; 477.55 MHz      ; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ;      ;
 +------------+-----------------+------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+-------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                                      ;
-+------------------------------------------------+--------+---------------+
-; Clock                                          ; Slack  ; End Point TNS ;
-+------------------------------------------------+--------+---------------+
-; skeeballState:inst11|state[1]                  ; -2.638 ; -21.460       ;
-; KEY[0]                                         ; 1.029  ; 0.000         ;
-; CLOCK_50                                       ; 1.412  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 7.415  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 7.447  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 7.450  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 7.532  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 7.581  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 7.587  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 7.629  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 17.500 ; 0.000         ;
-+------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                                       ;
++------------------------------------------------+---------+---------------+
+; Clock                                          ; Slack   ; End Point TNS ;
++------------------------------------------------+---------+---------------+
+; KEY[0]                                         ; 37.472  ; 0.000         ;
+; CLOCK_50                                       ; 39.664  ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 83.762  ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 122.271 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 122.353 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 122.512 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 122.551 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 122.577 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 122.668 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 122.718 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 247.417 ; 0.000         ;
++------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------+
@@ -307,29 +307,29 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; CLOCK_50                                       ; 0.168 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.469 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.477 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.496 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.521 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.566 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.577 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.597 ; 0.000         ;
-; KEY[0]                                         ; 0.634 ; 0.000         ;
-; skeeballState:inst11|state[1]                  ; 0.877 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.878 ; 0.000         ;
+; CLOCK_50                                       ; 0.379 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.485 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.493 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.532 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.545 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.556 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.574 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.641 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.896 ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 1.204 ; 0.000         ;
+; KEY[0]                                         ; 1.258 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Recovery Summary                                          ;
-+-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; Slack  ; End Point TNS ;
-+-------------------------------------------------------+--------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 13.385 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 33.376 ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 34.116 ; 0.000         ;
-+-------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Recovery Summary                                           ;
++-------------------------------------------------------+---------+---------------+
+; Clock                                                 ; Slack   ; End Point TNS ;
++-------------------------------------------------------+---------+---------------+
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 241.780 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 242.078 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 243.558 ; 0.000         ;
++-------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -337,9 +337,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.865 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 1.288 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 1.878 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 1.010 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 1.054 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 1.574 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -348,19 +348,19 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 9.313   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 9.340   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 9.366   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 9.375   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 9.382   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 9.413   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 9.426   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 9.430   ; 0.000         ;
-; CLOCK_50                                              ; 59.036  ; 0.000         ;
-; skeeballState:inst11|state[1]                         ; 99.148  ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 99.361  ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 99.373  ; 0.000         ;
-; KEY[0]                                                ; 113.855 ; 0.000         ;
+; CLOCK_50                                              ; 123.984 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 124.297 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 124.364 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 124.369 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 124.388 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 124.389 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 124.391 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 124.392 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 124.392 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 124.398 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 124.419 ; 0.000         ;
+; KEY[0]                                                ; 198.956 ; 0.000         ;
+; skeeballState:inst11|state[1]                         ; 249.322 ; 0.000         ;
 +-------------------------------------------------------+---------+---------------+
 
 
@@ -371,28 +371,28 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 8
 Shortest Synchronizer Chain: 4 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 161.464 ns
+Worst Case Available Settling Time: 990.792 ns
 
 
 
 
-+-------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                     ;
-+------------------------------------------------+--------+---------------+
-; Clock                                          ; Slack  ; End Point TNS ;
-+------------------------------------------------+--------+---------------+
-; skeeballState:inst11|state[1]                  ; 1.240  ; 0.000         ;
-; CLOCK_50                                       ; 1.792  ; 0.000         ;
-; KEY[0]                                         ; 3.159  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 7.991  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 8.025  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 8.045  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 8.066  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 8.117  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 8.188  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 8.210  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 18.183 ; 0.000         ;
-+------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                      ;
++------------------------------------------------+---------+---------------+
+; Clock                                          ; Slack   ; End Point TNS ;
++------------------------------------------------+---------+---------------+
+; KEY[0]                                         ; 40.179  ; 0.000         ;
+; CLOCK_50                                       ; 42.388  ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 88.921  ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 122.920 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 122.967 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 123.024 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 123.067 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 123.082 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 123.265 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 123.272 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 248.096 ; 0.000         ;
++------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------+
@@ -400,29 +400,29 @@ Worst Case Available Settling Time: 161.464 ns
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.152 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.155 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.171 ; 0.000         ;
 ; CLOCK_50                                       ; 0.182 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.219 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.257 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.259 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.259 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.445 ; 0.000         ;
-; skeeballState:inst11|state[1]                  ; 0.497 ; 0.000         ;
-; KEY[0]                                         ; 0.633 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.189 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.193 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.197 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.236 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.240 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.288 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.291 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.485 ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 0.686 ; 0.000         ;
+; KEY[0]                                         ; 1.027 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Recovery Summary                                         ;
-+-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; Slack  ; End Point TNS ;
-+-------------------------------------------------------+--------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 15.811 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 35.760 ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 36.473 ; 0.000         ;
-+-------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Recovery Summary                                          ;
++-------------------------------------------------------+---------+---------------+
+; Clock                                                 ; Slack   ; End Point TNS ;
++-------------------------------------------------------+---------+---------------+
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 244.748 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 244.917 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 245.956 ; 0.000         ;
++-------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -430,9 +430,9 @@ Worst Case Available Settling Time: 161.464 ns
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.456 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 0.836 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 1.156 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 0.550 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 0.719 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.960 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -441,19 +441,19 @@ Worst Case Available Settling Time: 161.464 ns
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 9.542   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 9.558   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 9.578   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 9.584   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 9.596   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 9.644   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 9.645   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 9.653   ; 0.000         ;
-; CLOCK_50                                              ; 59.014  ; 0.000         ;
-; skeeballState:inst11|state[1]                         ; 99.351  ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 99.644  ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 99.655  ; 0.000         ;
-; KEY[0]                                                ; 113.816 ; 0.000         ;
+; CLOCK_50                                              ; 123.986 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 124.510 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 124.588 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 124.599 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 124.625 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 124.636 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 124.644 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 124.644 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 124.645 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 124.654 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 124.666 ; 0.000         ;
+; KEY[0]                                                ; 198.912 ; 0.000         ;
+; skeeballState:inst11|state[1]                         ; 249.522 ; 0.000         ;
 +-------------------------------------------------------+---------+---------------+
 
 
@@ -464,28 +464,28 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 8
 Shortest Synchronizer Chain: 4 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 166.884 ns
+Worst Case Available Settling Time: 993.824 ns
 
 
 
 
-+-------------------------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                                      ;
-+------------------------------------------------+--------+---------------+
-; Clock                                          ; Slack  ; End Point TNS ;
-+------------------------------------------------+--------+---------------+
-; CLOCK_50                                       ; 2.142  ; 0.000         ;
-; skeeballState:inst11|state[1]                  ; 2.152  ; 0.000         ;
-; KEY[0]                                         ; 4.110  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 8.181  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 8.200  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 8.210  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 8.240  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 8.277  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 8.332  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 8.345  ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 18.324 ; 0.000         ;
-+------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                                       ;
++------------------------------------------------+---------+---------------+
+; Clock                                          ; Slack   ; End Point TNS ;
++------------------------------------------------+---------+---------------+
+; KEY[0]                                         ; 41.483  ; 0.000         ;
+; CLOCK_50                                       ; 43.425  ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 90.102  ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 123.114 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 123.146 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 123.204 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 123.242 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 123.254 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 123.404 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 123.406 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 248.252 ; 0.000         ;
++------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------+
@@ -493,29 +493,29 @@ Worst Case Available Settling Time: 166.884 ns
 +------------------------------------------------+-------+---------------+
 ; Clock                                          ; Slack ; End Point TNS ;
 +------------------------------------------------+-------+---------------+
-; CLOCK_50                                       ; 0.000 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.106 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.106 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.113 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.180 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.186 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.200 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.206 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.395 ; 0.000         ;
-; KEY[0]                                         ; 0.404 ; 0.000         ;
-; skeeballState:inst11|state[1]                  ; 0.440 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E   ; 0.152 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J ; 0.153 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J ; 0.163 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J ; 0.164 ; 0.000         ;
+; CLOCK_50                                       ; 0.171 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J ; 0.192 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J ; 0.236 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J ; 0.237 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J ; 0.441 ; 0.000         ;
+; skeeballState:inst11|state[1]                  ; 0.607 ; 0.000         ;
+; KEY[0]                                         ; 0.896 ; 0.000         ;
 +------------------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Fast 1100mV 0C Model Recovery Summary                                          ;
-+-------------------------------------------------------+--------+---------------+
-; Clock                                                 ; Slack  ; End Point TNS ;
-+-------------------------------------------------------+--------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 16.041 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 36.018 ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 36.618 ; 0.000         ;
-+-------------------------------------------------------+--------+---------------+
++---------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Recovery Summary                                           ;
++-------------------------------------------------------+---------+---------------+
+; Clock                                                 ; Slack   ; End Point TNS ;
++-------------------------------------------------------+---------+---------------+
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 245.140 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 245.295 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 246.182 ; 0.000         ;
++-------------------------------------------------------+---------+---------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -523,9 +523,9 @@ Worst Case Available Settling Time: 166.884 ns
 +-------------------------------------------------------+-------+---------------+
 ; Clock                                                 ; Slack ; End Point TNS ;
 +-------------------------------------------------------+-------+---------------+
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.365 ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 0.708 ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 0.997 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 0.474 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 0.556 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 0.797 ; 0.000         ;
 +-------------------------------------------------------+-------+---------------+
 
 
@@ -534,19 +534,19 @@ Worst Case Available Settling Time: 166.884 ns
 +-------------------------------------------------------+---------+---------------+
 ; Clock                                                 ; Slack   ; End Point TNS ;
 +-------------------------------------------------------+---------+---------------+
-; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 9.572   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 9.579   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 9.600   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 9.604   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 9.604   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 9.651   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 9.652   ; 0.000         ;
-; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 9.660   ; 0.000         ;
-; CLOCK_50                                              ; 59.012  ; 0.000         ;
-; skeeballState:inst11|state[1]                         ; 99.408  ; 0.000         ;
-; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 99.642  ; 0.000         ;
-; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 99.653  ; 0.000         ;
-; KEY[0]                                                ; 113.858 ; 0.000         ;
+; CLOCK_50                                              ; 123.990 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 124.539 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 124.601 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 124.615 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 124.633 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 124.637 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 124.642 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 124.644 ; 0.000         ;
+; clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 124.644 ; 0.000         ;
+; highforfive:inst14|myCount5:countforfive|laststate.s5 ; 124.647 ; 0.000         ;
+; highforfive:inst15|myCount5:countforfive|laststate.s5 ; 124.664 ; 0.000         ;
+; KEY[0]                                                ; 198.930 ; 0.000         ;
+; skeeballState:inst11|state[1]                         ; 249.559 ; 0.000         ;
 +-------------------------------------------------------+---------+---------------+
 
 
@@ -557,7 +557,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 8
 Shortest Synchronizer Chain: 4 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 167.713 ns
+Worst Case Available Settling Time: 994.222 ns
 
 
 
@@ -567,21 +567,21 @@ Worst Case Available Settling Time: 167.713 ns
 +--------------------------------------------------------+---------+-------+----------+---------+---------------------+
 ; Clock                                                  ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                                       ; -3.082  ; 0.000 ; 13.385   ; 0.365   ; 9.294               ;
-;  CLOCK_50                                              ; 1.178   ; 0.000 ; N/A      ; N/A     ; 59.012              ;
-;  KEY[0]                                                ; 0.815   ; 0.404 ; N/A      ; N/A     ; 113.816             ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 7.450   ; 0.200 ; N/A      ; N/A     ; 9.373               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 7.532   ; 0.106 ; N/A      ; N/A     ; 9.364               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 7.587   ; 0.113 ; N/A      ; N/A     ; 9.366               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 7.629   ; 0.180 ; N/A      ; N/A     ; 9.424               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 7.447   ; 0.206 ; N/A      ; N/A     ; 9.410               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 7.406   ; 0.106 ; N/A      ; N/A     ; 9.315               ;
-;  clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 17.470  ; 0.395 ; 13.385   ; 0.708   ; 9.294               ;
-;  clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 7.565   ; 0.186 ; N/A      ; N/A     ; 9.423               ;
-;  highforfive:inst14|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 34.116   ; 0.365   ; 99.361              ;
-;  highforfive:inst15|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 33.318   ; 0.997   ; 99.373              ;
-;  skeeballState:inst11|state[1]                         ; -3.082  ; 0.440 ; N/A      ; N/A     ; 99.132              ;
-; Design-wide TNS                                        ; -25.08  ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+; Worst-case Slack                                       ; 36.996  ; 0.152 ; 241.683  ; 0.474   ; 123.984             ;
+;  CLOCK_50                                              ; 38.910  ; 0.171 ; N/A      ; N/A     ; 123.984             ;
+;  KEY[0]                                                ; 36.996  ; 0.896 ; N/A      ; N/A     ; 198.912             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 122.271 ; 0.192 ; N/A      ; N/A     ; 124.292             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J        ; 122.567 ; 0.164 ; N/A      ; N/A     ; 124.416             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J        ; 122.512 ; 0.153 ; N/A      ; N/A     ; 124.386             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J        ; 122.537 ; 0.236 ; N/A      ; N/A     ; 124.391             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J        ; 122.718 ; 0.163 ; N/A      ; N/A     ; 124.392             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J        ; 122.353 ; 0.237 ; N/A      ; N/A     ; 124.364             ;
+;  clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J        ; 247.354 ; 0.441 ; 241.986  ; 0.556   ; 124.392             ;
+;  clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 122.668 ; 0.152 ; N/A      ; N/A     ; 124.388             ;
+;  highforfive:inst14|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 241.683  ; 0.797   ; 124.369             ;
+;  highforfive:inst15|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 243.551  ; 0.474   ; 124.398             ;
+;  skeeballState:inst11|state[1]                         ; 83.137  ; 0.607 ; N/A      ; N/A     ; 249.296             ;
+; Design-wide TNS                                        ; 0.0     ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLOCK_50                                              ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  KEY[0]                                                ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J        ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
@@ -594,7 +594,7 @@ Worst Case Available Settling Time: 167.713 ns
 ;  clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E          ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  highforfive:inst14|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 0.000    ; 0.000   ; 0.000               ;
 ;  highforfive:inst15|myCount5:countforfive|laststate.s5 ; N/A     ; N/A   ; 0.000    ; 0.000   ; 0.000               ;
-;  skeeballState:inst11|state[1]                         ; -25.080 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  skeeballState:inst11|state[1]                         ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +--------------------------------------------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -662,17 +662,16 @@ Worst Case Available Settling Time: 167.713 ns
 +----------+--------------+-----------------+-----------------+
 ; Pin      ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +----------+--------------+-----------------+-----------------+
-; KEY[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[3]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE3    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; KEY[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; CLOCK_50 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[5]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[4]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[2]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[1]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; KEY[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[6]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[0]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE4    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE5    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; KEY[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE1    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE2    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE6    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SKEE0    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +----------+--------------+-----------------+-----------------+
 
 
@@ -937,14 +936,14 @@ Worst Case Available Settling Time: 167.713 ns
 ; CLOCK_50                                              ; CLOCK_50                                       ; 18       ; 0        ; 0        ; 0        ;
 ; highforfive:inst14|myCount5:countforfive|laststate.s5 ; CLOCK_50                                       ; 1        ; 1        ; 0        ; 0        ;
 ; highforfive:inst15|myCount5:countforfive|laststate.s5 ; CLOCK_50                                       ; 2        ; 2        ; 0        ; 0        ;
-; KEY[0]                                                ; CLOCK_50                                       ; 122      ; 1        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; CLOCK_50                                       ; 135      ; 14       ; 0        ; 0        ;
+; KEY[0]                                                ; CLOCK_50                                       ; 117      ; 1        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; CLOCK_50                                       ; 130      ; 14       ; 0        ; 0        ;
 ; CLOCK_50                                              ; KEY[0]                                         ; 17       ; 0        ; 0        ; 0        ;
-; KEY[0]                                                ; KEY[0]                                         ; 96       ; 0        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; KEY[0]                                         ; 105      ; 9        ; 0        ; 0        ;
+; KEY[0]                                                ; KEY[0]                                         ; 100      ; 0        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; KEY[0]                                         ; 109      ; 9        ; 0        ; 0        ;
 ; CLOCK_50                                              ; skeeballState:inst11|state[1]                  ; 17       ; 0        ; 0        ; 0        ;
-; KEY[0]                                                ; skeeballState:inst11|state[1]                  ; 200      ; 0        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; skeeballState:inst11|state[1]                  ; 297      ; 9        ; 0        ; 0        ;
+; KEY[0]                                                ; skeeballState:inst11|state[1]                  ; 228      ; 0        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; skeeballState:inst11|state[1]                  ; 349      ; 9        ; 0        ; 0        ;
 +-------------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -974,14 +973,14 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; CLOCK_50                                              ; CLOCK_50                                       ; 18       ; 0        ; 0        ; 0        ;
 ; highforfive:inst14|myCount5:countforfive|laststate.s5 ; CLOCK_50                                       ; 1        ; 1        ; 0        ; 0        ;
 ; highforfive:inst15|myCount5:countforfive|laststate.s5 ; CLOCK_50                                       ; 2        ; 2        ; 0        ; 0        ;
-; KEY[0]                                                ; CLOCK_50                                       ; 122      ; 1        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; CLOCK_50                                       ; 135      ; 14       ; 0        ; 0        ;
+; KEY[0]                                                ; CLOCK_50                                       ; 117      ; 1        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; CLOCK_50                                       ; 130      ; 14       ; 0        ; 0        ;
 ; CLOCK_50                                              ; KEY[0]                                         ; 17       ; 0        ; 0        ; 0        ;
-; KEY[0]                                                ; KEY[0]                                         ; 96       ; 0        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; KEY[0]                                         ; 105      ; 9        ; 0        ; 0        ;
+; KEY[0]                                                ; KEY[0]                                         ; 100      ; 0        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; KEY[0]                                         ; 109      ; 9        ; 0        ; 0        ;
 ; CLOCK_50                                              ; skeeballState:inst11|state[1]                  ; 17       ; 0        ; 0        ; 0        ;
-; KEY[0]                                                ; skeeballState:inst11|state[1]                  ; 200      ; 0        ; 0        ; 0        ;
-; skeeballState:inst11|state[1]                         ; skeeballState:inst11|state[1]                  ; 297      ; 9        ; 0        ; 0        ;
+; KEY[0]                                                ; skeeballState:inst11|state[1]                  ; 228      ; 0        ; 0        ; 0        ;
+; skeeballState:inst11|state[1]                         ; skeeballState:inst11|state[1]                  ; 349      ; 9        ; 0        ; 0        ;
 +-------------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1068,12 +1067,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE1      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE2      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE4      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE5      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE6      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -1127,12 +1126,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE1      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE2      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE4      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE5      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SKEE6      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -1187,7 +1186,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
-    Info: Processing started: Wed Apr  5 15:39:13 2023
+    Info: Processing started: Fri Apr  7 17:56:49 2023
 Info: Command: quartus_sta SkeeballFinal -c SkeeballFinal
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1199,277 +1198,273 @@ Info (332151): Clock uncertainty is not calculated until you update the timing n
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.082
+Info (332146): Worst-case setup slack is 36.996
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.082             -25.080 skeeballState:inst11|state[1] 
-    Info (332119):     0.815               0.000 KEY[0] 
-    Info (332119):     1.178               0.000 CLOCK_50 
-    Info (332119):     7.406               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     7.454               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     7.460               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     7.552               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     7.565               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     7.610               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     7.667               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):    17.470               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-Info (332146): Worst-case hold slack is 0.373
+    Info (332119):    36.996               0.000 KEY[0] 
+    Info (332119):    38.910               0.000 CLOCK_50 
+    Info (332119):    83.137               0.000 skeeballState:inst11|state[1] 
+    Info (332119):   122.282               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   122.364               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   122.520               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   122.537               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   122.567               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   122.672               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   122.743               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   247.354               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+Info (332146): Worst-case hold slack is 0.374
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.373               0.000 CLOCK_50 
-    Info (332119):     0.457               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     0.473               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     0.482               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     0.520               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     0.530               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     0.552               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     0.574               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     0.807               0.000 KEY[0] 
-    Info (332119):     0.925               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     0.949               0.000 skeeballState:inst11|state[1] 
-Info (332146): Worst-case recovery slack is 13.425
+    Info (332119):     0.374               0.000 CLOCK_50 
+    Info (332119):     0.444               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):     0.493               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):     0.518               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):     0.526               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):     0.537               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):     0.539               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):     0.600               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):     0.952               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     1.262               0.000 skeeballState:inst11|state[1] 
+    Info (332119):     1.371               0.000 KEY[0] 
+Info (332146): Worst-case recovery slack is 241.683
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.425               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):    33.318               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):    34.173               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case removal slack is 0.922
+    Info (332119):   241.683               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   241.986               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   243.551               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case removal slack is 1.019
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.922               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):     1.339               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     1.896               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case minimum pulse width slack is 9.294
+    Info (332119):     1.019               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):     1.221               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     1.691               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case minimum pulse width slack is 124.013
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.294               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     9.315               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     9.364               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     9.373               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     9.375               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     9.410               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     9.423               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     9.424               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):    59.071               0.000 CLOCK_50 
-    Info (332119):    99.132               0.000 skeeballState:inst11|state[1] 
-    Info (332119):    99.382               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):    99.399               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):   113.849               0.000 KEY[0] 
+    Info (332119):   124.013               0.000 CLOCK_50 
+    Info (332119):   124.292               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   124.367               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   124.386               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   124.397               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   124.397               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.404               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   124.406               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.407               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   124.416               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   124.419               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   198.974               0.000 KEY[0] 
+    Info (332119):   249.296               0.000 skeeballState:inst11|state[1] 
 Info (332114): Report Metastability: Found 8 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 8
     Info (332114): Shortest Synchronizer Chain: 4 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 161.254 ns
+    Info (332114): Worst Case Available Settling Time: 990.923 ns
     Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.638
+Info (332146): Worst-case setup slack is 37.472
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.638             -21.460 skeeballState:inst11|state[1] 
-    Info (332119):     1.029               0.000 KEY[0] 
-    Info (332119):     1.412               0.000 CLOCK_50 
-    Info (332119):     7.415               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     7.447               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     7.450               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     7.532               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     7.581               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     7.587               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     7.629               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):    17.500               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-Info (332146): Worst-case hold slack is 0.168
+    Info (332119):    37.472               0.000 KEY[0] 
+    Info (332119):    39.664               0.000 CLOCK_50 
+    Info (332119):    83.762               0.000 skeeballState:inst11|state[1] 
+    Info (332119):   122.271               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   122.353               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   122.512               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   122.551               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   122.577               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   122.668               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   122.718               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   247.417               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+Info (332146): Worst-case hold slack is 0.379
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.168               0.000 CLOCK_50 
-    Info (332119):     0.469               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     0.477               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     0.496               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     0.521               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     0.566               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     0.577               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     0.597               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     0.634               0.000 KEY[0] 
-    Info (332119):     0.877               0.000 skeeballState:inst11|state[1] 
-    Info (332119):     0.878               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-Info (332146): Worst-case recovery slack is 13.385
+    Info (332119):     0.379               0.000 CLOCK_50 
+    Info (332119):     0.485               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):     0.493               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):     0.532               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):     0.545               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):     0.556               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):     0.574               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):     0.641               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):     0.896               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     1.204               0.000 skeeballState:inst11|state[1] 
+    Info (332119):     1.258               0.000 KEY[0] 
+Info (332146): Worst-case recovery slack is 241.780
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.385               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):    33.376               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):    34.116               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case removal slack is 0.865
+    Info (332119):   241.780               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   242.078               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   243.558               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case removal slack is 1.010
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.865               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):     1.288               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     1.878               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case minimum pulse width slack is 9.313
+    Info (332119):     1.010               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):     1.054               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     1.574               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case minimum pulse width slack is 123.984
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.313               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     9.340               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     9.366               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     9.375               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     9.382               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     9.413               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     9.426               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     9.430               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):    59.036               0.000 CLOCK_50 
-    Info (332119):    99.148               0.000 skeeballState:inst11|state[1] 
-    Info (332119):    99.361               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):    99.373               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):   113.855               0.000 KEY[0] 
+    Info (332119):   123.984               0.000 CLOCK_50 
+    Info (332119):   124.297               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   124.364               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   124.369               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.388               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   124.389               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   124.391               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   124.392               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   124.392               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   124.398               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.419               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   198.956               0.000 KEY[0] 
+    Info (332119):   249.322               0.000 skeeballState:inst11|state[1] 
 Info (332114): Report Metastability: Found 8 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 8
     Info (332114): Shortest Synchronizer Chain: 4 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 161.464 ns
+    Info (332114): Worst Case Available Settling Time: 990.792 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.240
+Info (332146): Worst-case setup slack is 40.179
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.240               0.000 skeeballState:inst11|state[1] 
-    Info (332119):     1.792               0.000 CLOCK_50 
-    Info (332119):     3.159               0.000 KEY[0] 
-    Info (332119):     7.991               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     8.025               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     8.045               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     8.066               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     8.117               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     8.188               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     8.210               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):    18.183               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-Info (332146): Worst-case hold slack is 0.152
+    Info (332119):    40.179               0.000 KEY[0] 
+    Info (332119):    42.388               0.000 CLOCK_50 
+    Info (332119):    88.921               0.000 skeeballState:inst11|state[1] 
+    Info (332119):   122.920               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   122.967               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   123.024               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   123.067               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   123.082               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   123.265               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   123.272               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   248.096               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+Info (332146): Worst-case hold slack is 0.182
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.152               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     0.155               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     0.171               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
     Info (332119):     0.182               0.000 CLOCK_50 
-    Info (332119):     0.219               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     0.257               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     0.259               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     0.259               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     0.445               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     0.497               0.000 skeeballState:inst11|state[1] 
-    Info (332119):     0.633               0.000 KEY[0] 
-Info (332146): Worst-case recovery slack is 15.811
+    Info (332119):     0.189               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):     0.193               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):     0.197               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):     0.236               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):     0.240               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):     0.288               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):     0.291               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):     0.485               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     0.686               0.000 skeeballState:inst11|state[1] 
+    Info (332119):     1.027               0.000 KEY[0] 
+Info (332146): Worst-case recovery slack is 244.748
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.811               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):    35.760               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):    36.473               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case removal slack is 0.456
+    Info (332119):   244.748               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   244.917               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   245.956               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case removal slack is 0.550
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.456               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):     0.836               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     1.156               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case minimum pulse width slack is 9.542
+    Info (332119):     0.550               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):     0.719               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     0.960               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case minimum pulse width slack is 123.986
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.542               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     9.558               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     9.578               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     9.584               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     9.596               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     9.644               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     9.645               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     9.653               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):    59.014               0.000 CLOCK_50 
-    Info (332119):    99.351               0.000 skeeballState:inst11|state[1] 
-    Info (332119):    99.644               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):    99.655               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):   113.816               0.000 KEY[0] 
+    Info (332119):   123.986               0.000 CLOCK_50 
+    Info (332119):   124.510               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   124.588               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   124.599               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   124.625               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   124.636               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   124.644               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   124.644               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   124.645               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   124.654               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.666               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):   198.912               0.000 KEY[0] 
+    Info (332119):   249.522               0.000 skeeballState:inst11|state[1] 
 Info (332114): Report Metastability: Found 8 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 8
     Info (332114): Shortest Synchronizer Chain: 4 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 166.884 ns
+    Info (332114): Worst Case Available Settling Time: 993.824 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 2.142
+Info (332146): Worst-case setup slack is 41.483
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.142               0.000 CLOCK_50 
-    Info (332119):     2.152               0.000 skeeballState:inst11|state[1] 
-    Info (332119):     4.110               0.000 KEY[0] 
-    Info (332119):     8.181               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     8.200               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     8.210               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     8.240               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     8.277               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     8.332               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     8.345               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):    18.324               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-Info (332146): Worst-case hold slack is 0.000
+    Info (332119):    41.483               0.000 KEY[0] 
+    Info (332119):    43.425               0.000 CLOCK_50 
+    Info (332119):    90.102               0.000 skeeballState:inst11|state[1] 
+    Info (332119):   123.114               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   123.146               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   123.204               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   123.242               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   123.254               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   123.404               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   123.406               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   248.252               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+Info (332146): Worst-case hold slack is 0.152
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.000               0.000 CLOCK_50 
-    Info (332119):     0.106               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     0.106               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     0.113               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     0.180               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     0.186               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     0.200               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     0.206               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):     0.395               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     0.404               0.000 KEY[0] 
-    Info (332119):     0.440               0.000 skeeballState:inst11|state[1] 
-Info (332146): Worst-case recovery slack is 16.041
+    Info (332119):     0.152               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):     0.153               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):     0.163               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):     0.164               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):     0.171               0.000 CLOCK_50 
+    Info (332119):     0.192               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):     0.236               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):     0.237               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):     0.441               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     0.607               0.000 skeeballState:inst11|state[1] 
+    Info (332119):     0.896               0.000 KEY[0] 
+Info (332146): Worst-case recovery slack is 245.140
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.041               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):    36.018               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):    36.618               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case removal slack is 0.365
+    Info (332119):   245.140               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   245.295               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   246.182               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case removal slack is 0.474
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.365               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):     0.708               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     0.997               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-Info (332146): Worst-case minimum pulse width slack is 9.572
+    Info (332119):     0.474               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):     0.556               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):     0.797               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+Info (332146): Worst-case minimum pulse width slack is 123.990
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.572               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
-    Info (332119):     9.579               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
-    Info (332119):     9.600               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
-    Info (332119):     9.604               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
-    Info (332119):     9.604               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
-    Info (332119):     9.651               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
-    Info (332119):     9.652               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
-    Info (332119):     9.660               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
-    Info (332119):    59.012               0.000 CLOCK_50 
-    Info (332119):    99.408               0.000 skeeballState:inst11|state[1] 
-    Info (332119):    99.642               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
-    Info (332119):    99.653               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
-    Info (332119):   113.858               0.000 KEY[0] 
+    Info (332119):   123.990               0.000 CLOCK_50 
+    Info (332119):   124.539               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_1|pstate.J 
+    Info (332119):   124.601               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_6|pstate.J 
+    Info (332119):   124.615               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_3|pstate.J 
+    Info (332119):   124.633               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_2|pstate.J 
+    Info (332119):   124.637               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_7|pstate.J 
+    Info (332119):   124.642               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_4|pstate.J 
+    Info (332119):   124.644               0.000 clk50MHzto1Hz:inst13|my_MOD10:div10_5|pstate.J 
+    Info (332119):   124.644               0.000 clk50MHzto1Hz:inst13|my_MOD5:div5_1|pstate.E 
+    Info (332119):   124.647               0.000 highforfive:inst14|myCount5:countforfive|laststate.s5 
+    Info (332119):   124.664               0.000 highforfive:inst15|myCount5:countforfive|laststate.s5 
+    Info (332119):   198.930               0.000 KEY[0] 
+    Info (332119):   249.559               0.000 skeeballState:inst11|state[1] 
 Info (332114): Report Metastability: Found 8 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 8
     Info (332114): Shortest Synchronizer Chain: 4 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 167.713 ns
+    Info (332114): Worst Case Available Settling Time: 994.222 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5179 megabytes
-    Info: Processing ended: Wed Apr  5 15:39:20 2023
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5180 megabytes
+    Info: Processing ended: Fri Apr  7 17:56:56 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
 

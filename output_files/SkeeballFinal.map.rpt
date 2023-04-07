@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SkeeballFinal
-Wed Apr  5 15:38:26 2023
+Fri Apr  7 17:56:07 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
 
 
@@ -79,14 +79,14 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr  5 15:38:26 2023           ;
+; Analysis & Synthesis Status     ; Successful - Fri Apr  7 17:56:07 2023           ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Standard Edition ;
 ; Revision Name                   ; SkeeballFinal                                   ;
 ; Top-level Entity Name           ; SkeeballFinal                                   ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 134                                             ;
-; Total pins                      ; 62                                              ;
+; Total pins                      ; 61                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -225,23 +225,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 103                           ;
 ;                                             ;                               ;
-; Combinational ALUT usage for logic          ; 155                           ;
+; Combinational ALUT usage for logic          ; 154                           ;
 ;     -- 7 input functions                    ; 0                             ;
-;     -- 6 input functions                    ; 27                            ;
-;     -- 5 input functions                    ; 29                            ;
-;     -- 4 input functions                    ; 62                            ;
+;     -- 6 input functions                    ; 29                            ;
+;     -- 5 input functions                    ; 28                            ;
+;     -- 4 input functions                    ; 60                            ;
 ;     -- <=3 input functions                  ; 37                            ;
 ;                                             ;                               ;
 ; Dedicated logic registers                   ; 134                           ;
 ;                                             ;                               ;
-; I/O pins                                    ; 62                            ;
+; I/O pins                                    ; 61                            ;
 ;                                             ;                               ;
 ; Total DSP Blocks                            ; 0                             ;
 ;                                             ;                               ;
 ; Maximum fan-out node                        ; skeeballState:inst11|state[1] ;
 ; Maximum fan-out                             ; 53                            ;
-; Total fan-out                               ; 1008                          ;
-; Average fan-out                             ; 2.44                          ;
+; Total fan-out                               ; 1005                          ;
+; Average fan-out                             ; 2.45                          ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -250,7 +250,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name         ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+---------------------+--------------+
-; |SkeeballFinal                   ; 155 (2)             ; 134 (0)                   ; 0                 ; 0          ; 62   ; 0            ; |SkeeballFinal                                                   ; SkeeballFinal       ; work         ;
+; |SkeeballFinal                   ; 154 (2)             ; 134 (0)                   ; 0                 ; 0          ; 61   ; 0            ; |SkeeballFinal                                                   ; SkeeballFinal       ; work         ;
 ;    |clk50MHzto1Hz:inst13|        ; 16 (0)              ; 75 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13                              ; clk50MHzto1Hz       ; work         ;
 ;       |my_MOD10:div10_1|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_1             ; my_MOD10            ; work         ;
 ;       |my_MOD10:div10_2|         ; 2 (2)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|clk50MHzto1Hz:inst13|my_MOD10:div10_2             ; my_MOD10            ; work         ;
@@ -264,8 +264,8 @@ https://fpgasoftware.intel.com/eula.
 ;       |myCount5:countforfive|    ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst14|myCount5:countforfive          ; myCount5            ; work         ;
 ;    |highforfive:inst15|          ; 4 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15                                ; highforfive         ; work         ;
 ;       |myCount5:countforfive|    ; 3 (3)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|highforfive:inst15|myCount5:countforfive          ; myCount5            ; work         ;
-;    |skeeballBalls:inst10|        ; 24 (24)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                              ; skeeballBalls       ; work         ;
-;    |skeeballDisplay:instDisp|    ; 64 (5)              ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp                          ; skeeballDisplay     ; work         ;
+;    |skeeballBalls:inst10|        ; 25 (25)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballBalls:inst10                              ; skeeballBalls       ; work         ;
+;    |skeeballDisplay:instDisp|    ; 65 (6)              ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp                          ; skeeballDisplay     ; work         ;
 ;       |hexDisplay:highDisplays|  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:highDisplays  ; hexDisplay          ; work         ;
 ;       |hexDisplay:lastDisplays|  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:lastDisplays  ; hexDisplay          ; work         ;
 ;       |hexDisplay:scoreDisplays| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|hexDisplay:scoreDisplays ; hexDisplay          ; work         ;
@@ -273,7 +273,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |skeeballHex:dispHex1|     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex1     ; skeeballHex         ; work         ;
 ;       |skeeballHex:dispHex2|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex2     ; skeeballHex         ; work         ;
 ;       |skeeballHex:dispHex3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballDisplay:instDisp|skeeballHex:dispHex3     ; skeeballHex         ; work         ;
-;    |skeeballScore:instScore|     ; 38 (38)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballScore:instScore                           ; skeeballScore       ; work         ;
+;    |skeeballScore:instScore|     ; 35 (35)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballScore:instScore                           ; skeeballScore       ; work         ;
 ;    |skeeballState:inst11|        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballState:inst11                              ; skeeballState       ; work         ;
 ;    |skeeballStateDecode:inst2|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SkeeballFinal|skeeballStateDecode:inst2                         ; skeeballStateDecode ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------+---------------------+--------------+
@@ -979,19 +979,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 16                          ;
 ;     ENA               ; 12                          ;
 ;     plain             ; 106                         ;
-; arriav_lcell_comb     ; 160                         ;
-;     normal            ; 160                         ;
+; arriav_lcell_comb     ; 159                         ;
+;     normal            ; 159                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 23                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 62                          ;
-;         5 data inputs ; 29                          ;
-;         6 data inputs ; 27                          ;
-; boundary_port         ; 62                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 60                          ;
+;         5 data inputs ; 28                          ;
+;         6 data inputs ; 29                          ;
+; boundary_port         ; 61                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.46                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.49                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1010,7 +1010,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
-    Info: Processing started: Wed Apr  5 15:38:14 2023
+    Info: Processing started: Fri Apr  7 17:55:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SkeeballFinal -c SkeeballFinal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1037,7 +1037,7 @@ Info (12021): Found 6 design units, including 6 entities, in source file skeebal
     Info (12023): Found entity 5: my_MOD10 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 104
     Info (12023): Found entity 6: my_MOD5 File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballTimers.v Line: 149
 Info (12127): Elaborating entity "SkeeballFinal" for the top level hierarchy
-Warning (275008): Primitive "NOT" of instance "instNotAll" not used
+Warning (275009): Pin "SKEE3" not connected
 Info (12128): Elaborating entity "skeeballDisplay" for hierarchy "skeeballDisplay:instDisp"
 Info (12128): Elaborating entity "hexDisplay" for hierarchy "skeeballDisplay:instDisp|hexDisplay:highDisplays" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 30
 Info (12128): Elaborating entity "skeeballHex" for hierarchy "skeeballDisplay:instDisp|skeeballHex:dispHex5" File: C:/Users/brhinman20/Documents/GitHub/SkeeballFinal/skeeballDisplay.v Line: 34
@@ -1069,17 +1069,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 57 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]"
-    Warning (15610): No output dependent on input pin "SW[3]"
-Info (21057): Implemented 312 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SKEE3"
+Info (21057): Implemented 310 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
     Info (21059): Implemented 51 output pins
-    Info (21061): Implemented 250 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4870 megabytes
-    Info: Processing ended: Wed Apr  5 15:38:26 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21061): Implemented 249 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Fri Apr  7 17:56:07 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
 
 

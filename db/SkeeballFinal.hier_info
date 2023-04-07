@@ -10,21 +10,13 @@ CLOCK_50 => skeeballState:inst11.clk
 CLOCK_50 => clk50MHzto1Hz:inst13.CLOCK_50
 CLOCK_50 => skeeballScore:instScore.clk
 KEY[0] => inst9.IN0
-KEY[1] => ~NO_FANOUT~
-KEY[2] => instNotAll13.IN0
-SW[0] => inst20.IN1
-SW[0] => skeeballScore:instScore.in0
-SW[1] => inst23.IN0
-SW[1] => skeeballScore:instScore.in10
-SW[2] => inst23.IN2
-SW[2] => skeeballScore:instScore.in20
-SW[3] => ~NO_FANOUT~
-SW[4] => inst23.IN3
-SW[4] => skeeballScore:instScore.in40
-SW[5] => inst23.IN4
-SW[5] => skeeballScore:instScore.in50
-SW[6] => inst23.IN5
-SW[6] => skeeballScore:instScore.in100
+KEY[1] => instNot3.IN0
+SKEE1 => instNot1.IN0
+SKEE2 => instNot2.IN0
+SKEE4 => instNot4.IN0
+SKEE5 => instNot5.IN0
+SKEE6 => instNot6.IN0
+SKEE0 => instNot0.IN0
 HEX1[0] <= skeeballDisplay:instDisp.HEX1[0]
 HEX1[1] <= skeeballDisplay:instDisp.HEX1[1]
 HEX1[2] <= skeeballDisplay:instDisp.HEX1[2]
@@ -69,6 +61,7 @@ LEDR[5] <= balls[5].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[6] <= balls[6].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[7] <= balls[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[8] <= balls[8].DB_MAX_OUTPUT_PORT_TYPE
+SKEE3 => ~NO_FANOUT~
 
 
 |SkeeballFinal|skeeballDisplay:instDisp
