@@ -8,10 +8,11 @@ HEX0[5] <= skeeballDisplay:instDisp.HEX0[5]
 HEX0[6] <= skeeballDisplay:instDisp.HEX0[6]
 CLOCK_50 => skeeballState:inst11.clk
 CLOCK_50 => clk50MHzto1Hz:inst13.CLOCK_50
+CLOCK_50 => clk50MHzto10Hz:inst10hz.CLOCK_50
 CLOCK_50 => skeeballScore:instScore.clk
 KEY[0] => inst9.IN0
-KEY[1] => instNot3.IN0
 SKEE1 => instNot1.IN0
+SKEE3 => instNot3.IN0
 SKEE2 => instNot2.IN0
 SKEE4 => instNot4.IN0
 SKEE5 => instNot5.IN0
@@ -61,7 +62,6 @@ LEDR[5] <= balls[5].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[6] <= balls[6].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[7] <= balls[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[8] <= balls[8].DB_MAX_OUTPUT_PORT_TYPE
-SKEE3 => ~NO_FANOUT~
 
 
 |SkeeballFinal|skeeballDisplay:instDisp
@@ -704,5 +704,109 @@ balls[5] <= balls[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 balls[6] <= balls[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 balls[7] <= balls[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 balls[8] <= balls[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb1
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz
+CLOCK_50 => CLOCK_50.IN1
+Reset => Reset.IN7
+clk10Hz <= my_MOD10:div10_6.port2
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD5:div5_1
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_1
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_2
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_3
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_4
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_5
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|clk50MHzto10Hz:inst10hz|my_MOD10:div10_6
+clk => pstate~1.DATAIN
+Reset => pstate~3.DATAIN
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb3
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb2
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb4
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb5
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb6
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SkeeballFinal|skeeballDebounce:instDeb0
+clk => outsig~reg0.CLK
+clk => tempsig.CLK
+insig => outsig.IN1
+insig => tempsig.DATAIN
+outsig <= outsig~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

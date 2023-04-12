@@ -102,31 +102,31 @@ module skeeballScore(playstate, clk, ballclk, in0, in10, in20, in30, in40, in50,
 												carry = 1'b0;
 											end
 										4'b0011: begin // 3
-												score1s = 4'b0011;
-												carry = 1'b0;
-											end
-										4'b0100: begin // 4
 												score1s = 4'b0111;
 												carry = 1'b0;
 											end
-										4'b0101: begin // 5
+										4'b0100: begin // 4
 												score1s = 4'b1000;
 												carry = 1'b0;
 											end
-										4'b0110: begin // 6
+										4'b0101: begin // 5
 												score1s = 4'b1001;
 												carry = 1'b0;
 											end
-										4'b0111: begin // 7
+										4'b0110: begin // 6
 												score1s = 4'b0000;
 												carry = 1'b1;
 											end
-										4'b1000: begin // 8
+										4'b0111: begin // 7
 												score1s = 4'b0001;
 												carry = 1'b1;
 											end
-										4'b1001: begin // 9
+										4'b1000: begin // 8
 												score1s = 4'b0010;
+												carry = 1'b1;
+											end
+										4'b1001: begin // 9
+												score1s = 4'b0011;
 												carry = 1'b1;
 											end
 										default: begin // Error, rollover

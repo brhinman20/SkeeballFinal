@@ -160,23 +160,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "SKEE4",
-					"strict" : false
-				},
-				{
 					"name" : "SKEE5",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[1]",
+					"name" : "SKEE4",
 					"strict" : false
 				},
 				{
-					"name" : "SKEE1",
+					"name" : "SKEE3",
 					"strict" : false
 				},
 				{
 					"name" : "SKEE2",
+					"strict" : false
+				},
+				{
+					"name" : "SKEE1",
 					"strict" : false
 				},
 				{

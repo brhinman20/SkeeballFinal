@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Apr  7 17:56:07 2023
+Analysis & Synthesis Status : Successful - Wed Apr 12 15:28:16 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Standard Edition
 Revision Name : SkeeballFinal
 Top-level Entity Name : SkeeballFinal
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 134
-Total pins : 61
+Total registers : 208
+Total pins : 60
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
